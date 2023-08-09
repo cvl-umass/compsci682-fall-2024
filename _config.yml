@@ -2,8 +2,8 @@
 title: "COMPSCI 682 Neural Networks: A Modern Introduction"
 # email: umass.deep.learning+682@gmail.com
 description: "Course Materials and Notes for UMass-Amherst COMPSCI 682 Neural Networks: A Modern Introduction."
-url: https://cvl-umass.github.io/compsci682-fall-2023/ # the base hostname & protocol for your site
-baseurl: "" # the subpath of your site, e.g. /blog/
+url: https://cvl-umass.github.io/ # the base hostname & protocol for your site
+baseurl: "/compsci682-fall-2023/" # the subpath of your site, e.g. /blog/
 
 # Build settings
 markdown: kramdown
