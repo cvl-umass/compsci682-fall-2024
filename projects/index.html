@@ -1,3 +1,6 @@
+---
+description: Project
+---
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -7,7 +10,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-    
+
     <!-- HTML4 meta tags forcing no-caching -->
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
     <meta http-equiv="Pragma" content="no-cache" />
@@ -18,17 +21,17 @@
     <title>COMPSCI 682 Neural Networks: A Modern Introduction</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{site.baseurl}}/assets/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <link href="{{site.baseurl}}/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="/assets/css/offcanvas.css" rel="stylesheet">
+    <link href="{{site.baseurl}}/assets/css/offcanvas.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="/assets/js/ie-emulation-modes-warning.js"></script>
+    <script src="{{site.baseurl}}/assets/js/ie-emulation-modes-warning.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -49,16 +52,16 @@
           </button>
           <!--<a class="navbar-brand" href="https://www.cics.umass.edu/">COMPSCI697L</a>-->
           <a class="navbar-brand" href="https://www.cics.umass.edu/"><img style="max-height:15px; margin-top: 1px;"
-             src="/assets/fig/umasslogo2.png"></a>
+             src="{{site.baseurl}}/assets/fig/umasslogo2.png"></a>
           <!--<a class="navbar-brand" href="#">COMPSCI697L</a>-->
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/syllabus.html">Lectures</a></li>
-            <li><a href="/notes/">Notes</a></li>
-            <li><a href="/assignments.html">Assignments</a></li>
-            <li class="active"><a href="/projects/">Project</a></li>
+            <li><a href="{{site.baseurl}}/index.html">Home</a></li>
+            <li><a href="{{site.baseurl}}/syllabus.html">Lectures</a></li>
+            <li><a href="{{site.baseurl}}/notes/">Notes</a></li>
+            <li><a href="{{site.baseurl}}/assignments.html">Assignments</a></li>
+            <li class="active"><a href="{{site.baseurl}}/projects/">Project</a></li>
           </ul>
         </div><!-- /.nav-collapse -->
       </div><!-- /.container -->
@@ -125,9 +128,9 @@
     <li><a href="http://arxiv.org/abs/1312.5602">Playing Atari with Deep Reinforcement Learning</a></li>
     <li><a href="http://blog.kaggle.com/2014/04/18/winning-the-galaxy-challenge-with-convnets/">Winning the Galaxy Challenge with convnets</a></li>
   </ul>
-  
+
   Deep neural networks also run in real time on mobile phones and Raspberry Pi's - feel free to go the embedded way. You may find <a href="https://github.com/tensorflow/tensorflow/tree/master/tensorflow/examples/android">this TensorFlow demo on Android</a> helpful. </p>
-  
+
   <p>For models, deep neural networks have been successfully used in a variety of computer vision and NLP tasks. This type of projects would involve understanding the state-of-the-art vision or NLP models, and building new models or improving existing models. The list below presents some papers on recent advances of deep neural networks in the computer vision community.</p>
   <ul>
     <li><strong>Object recognition</strong>: <a href="http://www.cs.toronto.edu/~fritz/absps/imagenet.pdf">[Krizhevsky et al.]</a>, <a href="http://arxiv.org/abs/1409.0575">[Russakovsky et al.]</a>, <a href="http://arxiv.org/abs/1409.4842">[Szegedy et al.]</a>, <a href="http://arxiv.org/abs/1409.1556">[Simonyan et al.]</a>, <a href="http://arxiv.org/abs/1406.4729">[He et al.]</a></li>
@@ -225,7 +228,7 @@
 
   <br><br>
   Submit your final submission on OpenReview. Please see the instruction on Piazza.
-  
+
   <br><br>
   <b>Report</b>. The following is a suggested structure for the report:
   <ul>
@@ -259,7 +262,7 @@
   <!-- <h2>Example Project Reports</h2>
   <a href="https://docs.google.com/spreadsheets/d/15OD2rXSUjv2fKLanevtMlaD2NteiFwF1_bv1ziyJ2Xs/edit?usp=sharing">COMPSCI 682 (2017 Fall) projects (only the project titles are available)</a><br>
   <a href="https://docs.google.com/spreadsheets/d/10rbnBZGXzfDGnTRM8h4Q660ZZ731RSQosZr-RqtlUhU/edit?usp=sharing">COMPSCI 697L (2016 Fall) projects</a><br>
-  <a href="http://vision.stanford.edu/teaching/cs231n/reports.html">Stanford CS231n (2015 Winter) projects</a>. 
+  <a href="http://vision.stanford.edu/teaching/cs231n/reports.html">Stanford CS231n (2015 Winter) projects</a>.
   <br> -->
 
   <h2>Collaboration Policy</h2>
@@ -315,9 +318,9 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="{{site.baseurl}}/assets/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="/assets/js/ie10-viewport-bug-workaround.js"></script>
-    <script src="/assets/js/offcanvas.js"></script>
+    <script src="{{site.baseurl}}/assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="{{site.baseurl}}/assets/js/offcanvas.js"></script>
   </body>
 </html>
