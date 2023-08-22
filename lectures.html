@@ -82,6 +82,7 @@ permalink: /lectures.html
         </div>
       </div>
         <div class="panel panel-default">
+{%   assign start = '05-09-2023 10:00:00' | date: '%s'  %}
 <table class="table">
   <tbody>
     <tr class="active">
@@ -89,7 +90,7 @@ permalink: /lectures.html
     </tr>
     <tr>
       <td>Lecture</td> <!-- Lecture 1 -->
-      <td>Thursday, Sept. 2</td>
+      <td>{{start | date: "%A, %b %-d"}}</td>
       <td>Intro to Deep Learning, historical context.</td>
       <td>
         <a href="https://docs.google.com/presentation/d/1b1o2tRsnKRVoE_FsR3wWQ3Hw_6nhobFksIhCgZrHmdI/edit?usp=sharing">[slides]</a><br>
@@ -106,7 +107,7 @@ permalink: /lectures.html
     </tr> -->
     <tr>
       <td>Lecture</td> <!-- Lecture 2 -->
-      <td>Tuesday, Sept. 7</td>
+      <td>{{ 2 | times: 86400 | plus: start | date: "%A, %b %-d"}}</td>
        <td>Image classification and the data-driven approach <br> k-nearest neighbor <br> Linear classification</td>
       <!-- <td>To be announced</td> -->
       <td>
@@ -117,7 +118,7 @@ permalink: /lectures.html
     </tr>
   <tr>
     <td>Lecture</td> <!-- Lecture 3 -->
-    <td>Thursday, Sept. 9</td>
+    <td>{{ 7 | times: 86400 | plus: start | date: "%A, %b %-d"}}</td>
     <!-- <td>To be announced</td> -->
     <td>Loss Functions <br> Optimization</td>
     <td>
@@ -134,7 +135,7 @@ permalink: /lectures.html
 
   <tr>
     <td>Lecture</td> <!-- Lecture 4 -->
-    <td>Tuesday, Sept. 14</td>
+    <td>{{ 9 | times: 86400 | plus: start | date: "%A, %b %-d"}}</td>
     <td>
         Backpropagation &amp; Neural Networks I
     </td>
@@ -147,7 +148,7 @@ permalink: /lectures.html
   </tr>
   <tr>
     <td>Lecture</td> <!-- Lecture 5 -->
-    <td>Thursday, Sept. 16</td>
+    <td>{{ 14 | times: 86400 | plus: start | date: "%A, %b %-d"}}</td>
     <td>
         Neural Networks II<br>
         Higher-level representations, image features<br>
@@ -168,7 +169,7 @@ permalink: /lectures.html
   </tr>
   <tr>
     <td>Lecture</td> <!-- Lecture 6 -->
-    <td>Tuesday, Sept. 21</td>
+    <td>{{ 16 | times: 86400 | plus: start | date: "%A, %b %-d"}}</td>
     <td>
         Neural Networks III <br>
         Training Neural Networks I <br>
@@ -185,7 +186,7 @@ permalink: /lectures.html
   </tr>
   <tr>
     <td>Lecture</td> <!-- Lecture 7 -->
-    <td>Thursday, Sept. 23</td>
+    <td>{{ 21 | times: 86400 | plus: start | date: "%A, %b %-d"}}</td>
     <td>
         Training Neural Networks II <br>
         weight initialization, batch normalization
@@ -206,7 +207,7 @@ permalink: /lectures.html
   </tr>
   <tr>
     <td>Lecture</td> <!-- Lecture 8 -->
-    <td>Tuesday, Sept. 28</td>
+    <td>{{ 23 | times: 86400 | plus: start | date: "%A, %b %-d"}}</td>
     <td>
         Training Neural Network III: <br>
         babysitting the learning process, hyperparameter optimization
@@ -218,7 +219,7 @@ permalink: /lectures.html
   </tr>
   <tr>
     <td>Lecture</td> <!-- Lecture 9 -->
-    <td>Thursday, Sept. 30</td>
+    <td>{{ 28 | times: 86400 | plus: start | date: "%A, %b %-d"}}</td>
     <td>
         Training Neural Network IV: <br>
         model ensembles, dropout
@@ -231,7 +232,7 @@ permalink: /lectures.html
   </tr>
   <tr>
     <td>Lecture</td> <!-- Lecture 10 -->
-    <td>Tuesday, Oct. 5</td>
+    <td>{{ 30 | times: 86400 | plus: start | date: "%A, %b %-d"}}</td>
     <td>
         DropOut... continued
     </td>
@@ -242,7 +243,7 @@ permalink: /lectures.html
   </tr>
   <tr>
     <td>Lecture</td>  <!-- Lecture 11 -->
-    <td>Thursday, Oct. 7</td>
+    <td>{{ 35 | times: 86400 | plus: start | date: "%A, %b %-d"}}</td>
     <td>
         Convolutional Neural Networks
     </td>
@@ -259,7 +260,7 @@ permalink: /lectures.html
   </tr>
   <tr>
     <td>Lecture</td>
-    <td>Tuesday, Oct. 12</td>  <!-- Lecture 12 -->
+    <td>{{ 37 | times: 86400 | plus: start | date: "%A, %b %-d"}}</td>  <!-- Lecture 12 -->
     <td>
       ConvNets for spatial localization<br>
       Object detection
@@ -275,7 +276,7 @@ permalink: /lectures.html
   </tr>
   <tr>
     <td>Lecture</td>
-    <td>Thursday, Oct. 14</td>  <!-- Lecture 13 -->
+    <td>{{ 42 | times: 86400 | plus: start | date: "%A, %b %-d"}}</td>  <!-- Lecture 13 -->
     <td>
       ConvNets for spatial localization<br>
       Object detection... continued
@@ -286,7 +287,7 @@ permalink: /lectures.html
   </tr>
   <tr>
     <td>Lecture</td>
-    <td>Tuesday, Oct. 19</td>  <!-- Lecture 14 -->
+    <td>{{ 44 | times: 86400 | plus: start | date: "%A, %b %-d"}}</td>  <!-- Lecture 14 -->
     <td>
       Object detection... continued
     </td>
@@ -296,7 +297,7 @@ permalink: /lectures.html
   </tr>
   <tr>
     <td>Lecture</td>
-    <td>Thursday, Oct. 21</td> <!-- Lecture 14 cont -->
+    <td>{{ 49 | times: 86400 | plus: start | date: "%A, %b %-d"}}</td> <!-- Lecture 14 cont -->
     <td>
       Understanding and visualizing Convolutional Neural Networks... continued<br>
     </td>
@@ -315,7 +316,7 @@ permalink: /lectures.html
   </tr> -->
   <tr>
     <td>Lecture</td>
-    <td>Tuesday, Oct. 26</td>
+    <td>{{ 51 | times: 86400 | plus: start | date: "%A, %b %-d"}}</td>
     <td>
       Backprop into image: Visualizations, deep dream
     </td>
@@ -325,7 +326,7 @@ permalink: /lectures.html
   </tr>
   <tr>
     <td>Lecture</td>
-    <td>Thursday, Oct. 28</td> <!-- Lecture 15/16 -->
+    <td>{{ 56 | times: 86400 | plus: start | date: "%A, %b %-d"}}</td> <!-- Lecture 15/16 -->
     <td>
       Neural Texture Synthesis and Style Transfer<br>
       Creating Adversarial Examples
@@ -337,7 +338,7 @@ permalink: /lectures.html
   </tr>
   <tr>
     <td>Lecture</td>
-    <td>Tuesday, Nov. 2</td>
+    <td>{{ 58 | times: 86400 | plus: start | date: "%A, %b %-d"}}</td>
     <td>
       Generative Adversarial Networks
     </td>
@@ -349,7 +350,7 @@ permalink: /lectures.html
   </tr>
   <tr>
     <td>Lecture</td>
-    <td>Thursday, Nov. 4</td>
+    <td>{{ 63 | times: 86400 | plus: start | date: "%A, %b %-d"}}</td>
     <td>
       Recurrent Neural Networks<br>
       Long Short Term Memory (LSTM)
@@ -371,7 +372,7 @@ permalink: /lectures.html
   </tr>
   <tr>
     <td>Lecture</td>
-    <td>Tuesday, Nov. 9</td>
+    <td>{{ 65 | times: 86400 | plus: start | date: "%A, %b %-d"}}</td>
     <td>
       RNN's: continued
     </td>
@@ -380,7 +381,7 @@ permalink: /lectures.html
   </tr>
   <tr>
     <td>Lecture</td>
-    <td>Thursday, Nov. 11</td>
+    <td>{{ 70 | times: 86400 | plus: start | date: "%A, %b %-d"}}</td>
     <td>
       No class
     </td>
@@ -388,7 +389,7 @@ permalink: /lectures.html
   </tr>
   <tr>
     <td>Lecture</td>
-    <td>Tuesday, Nov. 16</td>
+    <td>{{ 72 | times: 86400 | plus: start | date: "%A, %b %-d"}}</td>
     <td>
       Exam Review
     </td>
@@ -397,13 +398,13 @@ permalink: /lectures.html
   </tr>
   <tr class="danger">
     <td>Mid-Term</td>
-    <td>Thursday, Nov. 18</td>
+    <td>{{ 77 | times: 86400 | plus: start | date: "%A, %b %-d"}}</td>
     <td>Midterm to be held during regular lecture time</td>
     <td></td>
   </tr>
   <tr>
     <td>Lecture</td>
-    <td>Tuesday, Nov. 23</td>
+    <td>{{ 79 | times: 86400 | plus: start | date: "%A, %b %-d"}}</td>
     <td>
       Do word embeddings, ElMO? Attention and Self-Attention in NLP Transformers
     </td>
@@ -414,7 +415,7 @@ permalink: /lectures.html
   </tr>
   <tr>
     <td>Lecture</td>
-    <td>Thursday, Nov. 25</td>
+    <td>{{ 84 | times: 86400 | plus: start | date: "%A, %b %-d"}}</td>
     <td>
       No class
     </td>
@@ -423,7 +424,7 @@ permalink: /lectures.html
   </tr>
   <tr>
     <td>Lecture</td>
-    <td>Tuesday, Nov. 30</td>
+    <td>{{ 86 | times: 86400 | plus: start | date: "%A, %b %-d"}}</td>
     <td>
       Guest Lecture on Transformers by Andrew Drozdov
     </td>
@@ -433,7 +434,7 @@ permalink: /lectures.html
   </tr>
   <tr>
     <td>Lecture</td>
-    <td>Thursday, Dec. 2</td>
+    <td>{{ 91 | times: 86400 | plus: start | date: "%A, %b %-d"}}</td>
     <td>
       TBD
     </td>
@@ -442,7 +443,7 @@ permalink: /lectures.html
   </tr>
   <tr>
     <td>Lecture</td>
-    <td>Tuesday, Dec. 7</td>
+    <td>{{ 93 | times: 86400 | plus: start | date: "%A, %b %-d"}}</td>
     <td>
       Last lecture
     </td>
