@@ -422,6 +422,6 @@ Which prints **98%**!. We can also visualize the decision boundaries:
 
 We've worked with a toy 2D dataset and trained both a linear network and a 2-layer Neural Network. We saw that the change from a linear classifier to a Neural Network involves very few changes in the code. The score function changes its form (1 line of code difference), and the backpropagation changes its form (we have to perform one more round of backprop through the hidden layer to the first layer of the network).
 
-- You may want to look at this IPython Notebook code [rendered as HTML](http://cs.stanford.edu/people/karpathy/cs231nfiles/minimal_net.html).
-- Or download the [ipynb file](http://cs.stanford.edu/people/karpathy/cs231nfiles/minimal_net.ipynb)
+- You may want to look at this IPython Notebook code [rendered as HTML](https://cs.stanford.edu/people/karpathy/cs231nfiles/minimal_net.html).
+- Or download the [ipynb file](https://cs.stanford.edu/people/karpathy/cs231nfiles/minimal_net.ipynb)
 

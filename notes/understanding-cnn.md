@@ -53,7 +53,7 @@ To produce an embedding, we can take a set of images and use the ConvNet to extr
 <div class="fig figcenter fighighlight">
   <img src="{{site.baseurl}}/assets/cnnvis/tsne.jpeg" width="100%">
   <div class="figcaption">
-    t-SNE embedding of a set of images based on their CNN codes. Images that are nearby each other are also close in the CNN representation space, which implies that the CNN "sees" them as being very similar. Notice that the similarities are more often class-based and semantic rather than pixel and color-based. For more details on how this visualization was produced the associated code, and more related visualizations at different scales refer to <a href="http://cs.stanford.edu/people/karpathy/cnnembed/">t-SNE visualization of CNN codes</a>.
+    t-SNE embedding of a set of images based on their CNN codes. Images that are nearby each other are also close in the CNN representation space, which implies that the CNN "sees" them as being very similar. Notice that the similarities are more often class-based and semantic rather than pixel and color-based. For more details on how this visualization was produced the associated code, and more related visualizations at different scales refer to <a href="https://cs.stanford.edu/people/karpathy/cnnembed/">t-SNE visualization of CNN codes</a>.
   </div>
 </div>
 

@@ -27,7 +27,7 @@ Numpy
   </a>
 </div>
 
-This tutorial was contributed by [Justin Johnson](http://cs.stanford.edu/people/jcjohns/).
+This tutorial was contributed by [Justin Johnson](https://web.eecs.umich.edu/~justincj/).
 
 We will use the Python programming language for all assignments in this course.
 Python is a great general-purpose programming language on its own, but with the
@@ -41,10 +41,10 @@ computing. We'll also introduce notebooks, which are a very convenient way
 of tinkering with Python code. Some of you may have previous knowledge in a
 different language, in which case we also recommend referencing:
 [NumPy for Matlab users](https://numpy.org/doc/stable/user/numpy-for-matlab-users.html),
-[Python for R users](http://www.data-analysis-in-python.org/python_for_r.html), and/or
+[Python for R users](https://richardson.byu.edu/624/lpython/PythonforRusers.pdf), and/or
 [Python for SAS users](https://nbviewer.jupyter.org/github/RandyBetancourt/PythonForSASUsers/tree/master/).
 
-You can also find an [Jupyter notebook version of this tutorial here](https://github.com/kuleshov/cs228-material/blob/master/tutorials/python/cs228-python-tutorial.ipynb) created by [Volodymyr Kuleshov](http://web.stanford.edu/~kuleshov/) and [Isaac Caswell](https://symsys.stanford.edu/viewing/symsysaffiliate/21335) for [Stanford CS 228](http://cs.stanford.edu/~ermon/cs228/index.html).
+You can also find an [Jupyter notebook version of this tutorial here](https://github.com/kuleshov/cs228-material/blob/master/tutorials/python/cs228-python-tutorial.ipynb) created by [Volodymyr Kuleshov](https://www.cs.cornell.edu/~kuleshov/) and [Isaac Caswell](https://www.linkedin.com/in/isaac-caswell-5b264451) for [Stanford CS 228](http://cs.stanford.edu/~ermon/cs228/index.html).
 
 Table of contents:
 
@@ -93,7 +93,7 @@ and benefits from free access to hardware accelerators like GPUs and TPUs (with 
 **Run Tutorial in Jupyter Notebook**. If you wish to run the notebook locally with Jupyter, make sure your virtual environment is installed correctly (as per the [setup instructions]({{site.baseurl}}/setup-instructions/)), activate it, then run `pip install notebook` to install Jupyter notebook. Next, [open the notebook](https://raw.githubusercontent.com/compsci682-fa21/compsci682-fa21.github.io/master/jupyter-notebook-tutorial.ipynb) and download it to a directory of your choice by right-clicking on the page and selecting `Save Page As`. Then `cd` to that directory and run `jupyter notebook`.
 
 <div class='fig figcenter'>
-  <img src='/assets/ipython-tutorial/file-browser.png'>
+  <img src='{{site.baseurl}}/assets/ipython-tutorial/file-browser.png'>
 </div>
 
 This should automatically launch a notebook server at `http://localhost:8888`.
@@ -1011,8 +1011,8 @@ imsave('assets/cat_tinted.jpg', img_tinted)
 ```
 
 <div class='fig figcenter fighighlight'>
-  <img src='/assets/cat.jpg'>
-  <img src='/assets/cat_tinted.jpg'>
+  <img src='{{site.baseurl}}/assets/cat.jpg'>
+  <img src='{{site.baseurl}}/assets/cat_tinted.jpg'>
   <div class='figcaption'>
     Left: The original image.
     Right: The tinted and resized image.
@@ -1090,7 +1090,7 @@ plt.show()  # You must call plt.show() to make graphics appear.
 Running this code produces the following plot:
 
 <div class='fig figcenter fighighlight'>
-  <img src='/assets/sine.png'>
+  <img src='{{site.baseurl}}/assets/sine.png'>
 </div>
 
 With just a little bit of extra work we can easily plot multiple lines
@@ -1115,7 +1115,7 @@ plt.legend(['Sine', 'Cosine'])
 plt.show()
 ```
 <div class='fig figcenter fighighlight'>
-  <img src='/assets/sine_cosine.png'>
+  <img src='{{site.baseurl}}/assets/sine_cosine.png'>
 </div>
 
 You can read much more about the `plot` function
@@ -1154,7 +1154,7 @@ plt.show()
 ```
 
 <div class='fig figcenter fighighlight'>
-  <img src='/assets/sine_cosine_subplot.png'>
+  <img src='{{site.baseurl}}/assets/sine_cosine_subplot.png'>
 </div>
 
 You can read much more about the `subplot` function
@@ -1188,5 +1188,5 @@ plt.show()
 ```
 
 <div class='fig figcenter fighighlight'>
-  <img src='/assets/cat_tinted_imshow.png'>
+  <img src='{{site.baseurl}}/assets/cat_tinted_imshow.png'>
 </div>

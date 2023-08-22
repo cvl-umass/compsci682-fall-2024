@@ -382,6 +382,6 @@ Once you have a rough estimate of the total number of values (for activations, g
 Additional resources related to implementation:
 
 - [Soumith benchmarks for CONV performance](https://github.com/soumith/convnet-benchmarks)
-- [ConvNetJS CIFAR-10 demo](http://cs.stanford.edu/people/karpathy/convnetjs/demo/cifar10.html) allows you to play with ConvNet architectures and see the results and computations in real time, in the browser.
+- [ConvNetJS CIFAR-10 demo](https://cs.stanford.edu/people/karpathy/convnetjs/demo/cifar10.html) allows you to play with ConvNet architectures and see the results and computations in real time, in the browser.
 - [Caffe](http://caffe.berkeleyvision.org/), one of the popular ConvNet libraries.
 - [State of the art ResNets in Torch7](http://torch.ch/blog/2016/02/04/resnets.html)
