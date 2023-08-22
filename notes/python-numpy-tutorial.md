@@ -23,7 +23,7 @@ Numpy
 
 <div>
   <a href="https://colab.research.google.com/github/compsci682-fa21/compsci682-fa21.github.io/blob/main/colab_tutorial.ipynb" target="_blank">
-    <img class="colab-badge" src="/assets/badges/colab-open.svg" alt="Colab Notebook"/>
+    <img class="colab-badge" src="{{site.baseurl}}/assets/badges/colab-open.svg" alt="Colab Notebook"/>
   </a>
 </div>
 
