@@ -44,7 +44,7 @@ different language, in which case we also recommend referencing:
 [Python for R users](https://richardson.byu.edu/624/lpython/PythonforRusers.pdf), and/or
 [Python for SAS users](https://nbviewer.jupyter.org/github/RandyBetancourt/PythonForSASUsers/tree/master/).
 
-You can also find an [Jupyter notebook version of this tutorial here](https://github.com/kuleshov/cs228-material/blob/master/tutorials/python/cs228-python-tutorial.ipynb) created by [Volodymyr Kuleshov](https://www.cs.cornell.edu/~kuleshov/) and [Isaac Caswell](https://www.linkedin.com/in/isaac-caswell-5b264451) for [Stanford CS 228](http://cs.stanford.edu/~ermon/cs228/index.html).
+You can also find an [Jupyter notebook version of this tutorial here](https://github.com/kuleshov/cs228-material/blob/master/tutorials/python/cs228-python-tutorial.ipynb) created by [Volodymyr Kuleshov](https://www.cs.cornell.edu/~kuleshov/) and [Isaac Caswell](https://www.linkedin.com/in/isaac-caswell-5b264451) for [Stanford CS 228](https://cs.stanford.edu/~ermon/cs228/index.html).
 
 Table of contents:
 

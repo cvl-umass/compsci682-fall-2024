@@ -40,7 +40,7 @@ cd datasets
 **Start Jupyter Notebook:**
 After you have the CIFAR-10 data, you should start the Jupyter Notebook server from the
 `assignment1` directory. If you are unfamiliar with Jupyter, you should read our
-[Jupyter tutorial](/notes/jupyter-tutorial/).
+[Jupyter tutorial]({{site.baseurl}}/notes/jupyter-tutorial/).
 
 **NOTE:** If you are working in a virtual environment on OSX, you may encounter
 errors with matplotlib due to the [issues described here](http://matplotlib.org/faq/virtualenv_faq.html). You can work around this issue by starting the Jupyter server using the `start_jupyter_osx.sh` script from the `assignment1` directory; the script assumes that your virtual environment is named `.env`.
