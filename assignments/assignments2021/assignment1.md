@@ -4,7 +4,7 @@ mathjax: true
 permalink: /assignments/assignments2021/assignment1/
 ---
 
-Get the code as a zip file [here](https://raw.githubusercontent.com/compsci682-fa20/compsci682-fa20.github.io/master/assignments/assignments2020/assignment1.zip). 
+Get the code as a zip file [here](https://github.com/cvl-umass/compsci682-fall-2023/raw/main/assignments/assignments2021/assignment1.zip). 
 
 - [Setup](#setup)
 - [Goals](#goals)

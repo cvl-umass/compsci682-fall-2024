@@ -82,7 +82,10 @@ permalink: /lectures.html
         </div>
       </div>
         <div class="panel panel-default">
-{%   assign start = '05-09-2023 10:00:00' | date: '%s'  %}
+{% assign start = '05-09-2023 10:00:00' | date: '%s' %}
+{% assign delta = 2 | times: 86400 %}
+{% assign release_day = site.time | date: '%s' | plus: delta %}
+{% assign cur = 0 | times: 86400 | plus: start %}
 <table class="table">
   <tbody>
     <tr class="active">
@@ -90,12 +93,14 @@ permalink: /lectures.html
     </tr>
     <tr>
       <td>Lecture</td> <!-- Lecture 1 -->
-      <td>{{start | date: "%A, %b %-d"}}</td>
+      <td>{{cur | date: "%A, %b %-d"}}</td>
       <td>Intro to Deep Learning, historical context.</td>
       <td>
-        <a href="https://docs.google.com/presentation/d/1b1o2tRsnKRVoE_FsR3wWQ3Hw_6nhobFksIhCgZrHmdI/edit?usp=sharing">[slides]</a><br>
-        <a href="notes/python-numpy-tutorial/">[python/numpy tutorial]</a><br>
-        <a href="notes/jupyter-tutorial/">[jupyter tutorial]</a>
+        {% if release_day >= cur %}
+          <a href="https://docs.google.com/presentation/d/1b1o2tRsnKRVoE_FsR3wWQ3Hw_6nhobFksIhCgZrHmdI/edit?usp=sharing">[slides]</a><br>
+          <a href="notes/python-numpy-tutorial/">[python/numpy tutorial]</a><br>
+          <a href="notes/jupyter-tutorial/">[jupyter tutorial]</a>
+        {% endif %}
       </td>
     </tr>
     <!-- <tr class="info">
@@ -105,24 +110,30 @@ permalink: /lectures.html
       <td>
       </td>
     </tr> -->
+    {% assign cur = 2 | times: 86400 | plus: start %}
     <tr>
       <td>Lecture</td> <!-- Lecture 2 -->
-      <td>{{ 2 | times: 86400 | plus: start | date: "%A, %b %-d"}}</td>
+      <td>{{ cur | date: "%A, %b %-d"}}</td>
        <td>Image classification and the data-driven approach <br> k-nearest neighbor <br> Linear classification</td>
       <!-- <td>To be announced</td> -->
       <td>
-        <a href="https://docs.google.com/presentation/d/1zqU2vrqCCsd2cLpOG0ZHI8Lhe09wtmcHriyOf7Zn7JA/edit?usp=sharing">[slides]</a><br>
-        <a href="notes/classification/">[image classification notes]</a><br>
-        <a href="notes/linear-classify/">[linear classification notes]</a><br>
+        {% if release_day >= cur %}
+          <a href="https://docs.google.com/presentation/d/1zqU2vrqCCsd2cLpOG0ZHI8Lhe09wtmcHriyOf7Zn7JA/edit?usp=sharing">[slides]</a><br>
+          <a href="notes/classification/">[image classification notes]</a><br>
+          <a href="notes/linear-classify/">[linear classification notes]</a><br>
+        {% endif %}
       </td>
     </tr>
+  {% assign cur = 7 | times: 86400 | plus: start %}
   <tr>
     <td>Lecture</td> <!-- Lecture 3 -->
-    <td>{{ 7 | times: 86400 | plus: start | date: "%A, %b %-d"}}</td>
+    <td>{{ cur | date: "%A, %b %-d"}}</td>
     <!-- <td>To be announced</td> -->
     <td>Loss Functions <br> Optimization</td>
     <td>
-      <a href="https://docs.google.com/presentation/d/1Ka5eZgNOSBrMxOSOrik0G5iO-LBNBPRLlk_fmyuanRU/edit?usp=sharing">[slides]</a><br>
+      {% if release_day >= cur %}
+        <a href="https://docs.google.com/presentation/d/1Ka5eZgNOSBrMxOSOrik0G5iO-LBNBPRLlk_fmyuanRU/edit?usp=sharing">[slides]</a><br>
+      {% endif %}
     </td>
   </tr>
   <tr class="success">
@@ -132,70 +143,85 @@ permalink: /lectures.html
     <td>
     </td>
   </tr>
-
+  {% assign cur = 9 | times: 86400 | plus: start %}
   <tr>
     <td>Lecture</td> <!-- Lecture 4 -->
-    <td>{{ 9 | times: 86400 | plus: start | date: "%A, %b %-d"}}</td>
+    <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
         Backpropagation &amp; Neural Networks I
     </td>
     <td>
-      <a href="https://docs.google.com/presentation/d/1baPO9rghPBNdNhJ6XDBDXhQPpEAJHxVFz0n9Nqbff34/edit?usp=sharing">[slides]</a><br>
-      <a href="notes/optimization-2/">[backprop notes]</a><br>
-      <a href="http://yann.lecun.com/exdb/publis/pdf/lecun-98b.pdf">[Efficient BackProp]</a> (optional)<br>
-      related: <a href="http://colah.github.io/posts/2015-08-Backprop/">[1]</a>, <a href="http://neuralnetworksanddeeplearning.com/chap2.html">[2]</a>, <a href="https://www.youtube.com/watch?v=q0pm3BrIUFo">[3]</a> (optional)
+        {% if release_day >= cur %}
+        <a href="https://docs.google.com/presentation/d/1baPO9rghPBNdNhJ6XDBDXhQPpEAJHxVFz0n9Nqbff34/edit?usp=sharing">[slides]</a><br>
+        <a href="notes/optimization-2/">[backprop notes]</a><br>
+        <a href="http://yann.lecun.com/exdb/publis/pdf/lecun-98b.pdf">[Efficient BackProp]</a> (optional)<br>
+        related: <a href="http://colah.github.io/posts/2015-08-Backprop/">[1]</a>, <a href="http://neuralnetworksanddeeplearning.com/chap2.html">[2]</a>, <a href="https://www.youtube.com/watch?v=q0pm3BrIUFo">[3]</a> (optional)
+      {% endif %}
     </td>
   </tr>
+  {% assign cur = 14 | times: 86400 | plus: start %}
   <tr>
     <td>Lecture</td> <!-- Lecture 5 -->
-    <td>{{ 14 | times: 86400 | plus: start | date: "%A, %b %-d"}}</td>
+    <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
         Neural Networks II<br>
         Higher-level representations, image features<br>
         Vector, Matrix, and Tensor Derivatives
     </td>
     <td>
-      <a href="https://docs.google.com/presentation/d/1zTwZ-Vc0s9d33ruZaRDWkWtV5pucFufX5gF-Sje6WeM/edit?usp=sharing">[slides]</a><br>
-      handout 1: <a href="{{site.baseurl}}/docs/vecDerivs.pdf">Vector, Matrix, and Tensor Derivatives</a><br>
-      handout 2: <a href="http://cs231n.stanford.edu/handouts/derivatives.pdf">Derivatives, Backpropagation, and Vectorization</a><br>
-      <a href="http://www.nature.com/nature/journal/v521/n7553/full/nature14539.html">Deep Learning [Nature]</a> (optional)
+      {% if release_day >= cur %}
+        <a href="https://docs.google.com/presentation/d/1zTwZ-Vc0s9d33ruZaRDWkWtV5pucFufX5gF-Sje6WeM/edit?usp=sharing">[slides]</a><br>
+        handout 1: <a href="{{site.baseurl}}/docs/vecDerivs.pdf">Vector, Matrix, and Tensor Derivatives</a><br>
+        handout 2: <a href="http://cs231n.stanford.edu/handouts/derivatives.pdf">Derivatives, Backpropagation, and Vectorization</a><br>
+        <a href="http://www.nature.com/nature/journal/v521/n7553/full/nature14539.html">Deep Learning [Nature]</a> (optional)
+      {% endif %}
     </td>
   </tr>
   <tr class="success">
     <td>Optional Discussion</td>
     <td>Friday, Sept. 17</td>
     <td>Reviewing the chain rule, applying the chain rule to vectors</td>
-    <td><a href="https://docs.google.com/presentation/d/1LpA3EYyTtb9GlqEp1VFqsRQbdwQhG_8m/edit?usp=sharing&ouid=109406443820614506826&rtpof=true&sd=true">[slides]</a></td>
+    <td>
+      {% if release_day >= cur %}
+        <a href="https://docs.google.com/presentation/d/1LpA3EYyTtb9GlqEp1VFqsRQbdwQhG_8m/edit?usp=sharing&ouid=109406443820614506826&rtpof=true&sd=true">[slides]</a>
+      {% endif %}
+    </td>
   </tr>
+  {% assign cur = 16 | times: 86400 | plus: start %}
   <tr>
     <td>Lecture</td> <!-- Lecture 6 -->
-    <td>{{ 16 | times: 86400 | plus: start | date: "%A, %b %-d"}}</td>
+    <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
         Neural Networks III <br>
         Training Neural Networks I <br>
         Activation Functions
     </td>
     <td>
+      {% if release_day >= cur %}
         <a href="https://docs.google.com/presentation/d/1jRDvv2rrdfrQMHaMgJbUJdTMRK_x3TjK22OWE5ysJ74/edit?usp=sharing">[slides]</a><br>
         <a href="notes/neural-networks-1/">[Neural Nets notes 1]</a>
         tips/tricks:
         <a href="http://research.microsoft.com/pubs/192769/tricks-2012.pdf">[1]</a>,
         <a href="http://arxiv.org/pdf/1206.5533v2.pdf">[2]</a> (optional)
         <br>
+      {% endif %}
     </td>
   </tr>
+  {% assign cur = 21 | times: 86400 | plus: start %}
   <tr>
     <td>Lecture</td> <!-- Lecture 7 -->
-    <td>{{ 21 | times: 86400 | plus: start | date: "%A, %b %-d"}}</td>
+    <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
         Training Neural Networks II <br>
         weight initialization, batch normalization
     </td>
     <td>
-      <a href="https://docs.google.com/presentation/d/1IdTE9PBfqJjYed5VWdbuf3qR128D6jztTMhQHE_-RC4/edit?usp=sharing">[slides]</a><br>
-      <a href="notes/neural-networks-2/">[Neural Nets notes 2]</a><br>
-      <a href="https://arxiv.org/abs/1502.03167">[Batch Norm]</a><br>
-      <a href="https://drive.google.com/file/d/0B-0OtUj_Gj7nY0pzQWhoZnVVWDQ/view?usp=sharing">Copula Normalization</a> (optional)
+      {% if release_day >= cur %}
+        <a href="https://docs.google.com/presentation/d/1IdTE9PBfqJjYed5VWdbuf3qR128D6jztTMhQHE_-RC4/edit?usp=sharing">[slides]</a><br>
+        <a href="notes/neural-networks-2/">[Neural Nets notes 2]</a><br>
+        <a href="https://arxiv.org/abs/1502.03167">[Batch Norm]</a><br>
+        <a href="https://drive.google.com/file/d/0B-0OtUj_Gj7nY0pzQWhoZnVVWDQ/view?usp=sharing">Copula Normalization</a> (optional)
+      {% endif %}
     </td>
   </tr>
   <tr class="success">
@@ -205,50 +231,62 @@ permalink: /lectures.html
     <td>
     </td>
   </tr>
+  {% assign cur = 23 | times: 86400 | plus: start %}
   <tr>
     <td>Lecture</td> <!-- Lecture 8 -->
-    <td>{{ 23 | times: 86400 | plus: start | date: "%A, %b %-d"}}</td>
+    <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
         Training Neural Network III: <br>
         babysitting the learning process, hyperparameter optimization
     </td>
     <td>
+      {% if release_day >= cur %}
         <a href="https://docs.google.com/presentation/d/1zNZ4rZmKOshpIi5oq3pUzxuHoAt8ge7TcK4sCJpUaJo/edit?usp=sharing">[slides]</a><br>
         <a href="https://arxiv.org/abs/1206.5533">[Bengio 2012]</a> (optional)
+      {% endif %}
     </td>
   </tr>
+  {% assign cur = 28 | times: 86400 | plus: start %}
   <tr>
     <td>Lecture</td> <!-- Lecture 9 -->
-    <td>{{ 28 | times: 86400 | plus: start | date: "%A, %b %-d"}}</td>
+    <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
         Training Neural Network IV: <br>
         model ensembles, dropout
     </td>
     <td>
+      {% if release_day >= cur %}
         <a href="https://docs.google.com/presentation/d/1-SKzIFEO7hvDFnnXFNFwnmlLG7v3R-FkO3YKMfBY0bk/edit?usp=sharing">[slides]</a><br>
         <a href="notes/neural-networks-3/">[Neural Nets notes 3]</a><br>
         <a href="http://yann.lecun.com/exdb/publis/pdf/lecun-98.pdf">LeNet</a> (optional)<br>
+      {% endif %}
     </td>
   </tr>
+  {% assign cur = 30 | times: 86400 | plus: start %}
   <tr>
     <td>Lecture</td> <!-- Lecture 10 -->
-    <td>{{ 30 | times: 86400 | plus: start | date: "%A, %b %-d"}}</td>
+    <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
         DropOut... continued
     </td>
     <td>
+      {% if release_day >= cur %}
         <a href="https://docs.google.com/presentation/d/1mGJ9E6K2zhvM0m94hxtq_PqjTlErUxEi8j5Mm-aBug0/edit?usp=sharing">[slides]</a><br>
         <!-- <a href="https://docs.google.com/presentation/d/1mIVVop6WGi8BNFet-ajnrf7r4Z-VfyX8XCdyzuM7x1I/edit?usp=sharing">[slides]</a> -->
+      {% endif %}
     </td>
   </tr>
+  {% assign cur = 35 | times: 86400 | plus: start %}
   <tr>
     <td>Lecture</td>  <!-- Lecture 11 -->
-    <td>{{ 35 | times: 86400 | plus: start | date: "%A, %b %-d"}}</td>
+    <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
         Convolutional Neural Networks
     </td>
     <td>
+      {% if release_day >= cur %}
         <a href="https://docs.google.com/presentation/d/1U2ijqAYtgQf8yG8swZhuAJFTSqRf7kSl8Pj4ZxHndLk/edit?usp=sharing">[slides]</a>
+      {% endif %}
     </td>
   </tr>
   <tr class="success">
@@ -258,53 +296,63 @@ permalink: /lectures.html
     <td>
     </td>
   </tr>
+  {% assign cur = 37 | times: 86400 | plus: start %}
   <tr>
     <td>Lecture</td>
-    <td>{{ 37 | times: 86400 | plus: start | date: "%A, %b %-d"}}</td>  <!-- Lecture 12 -->
+    <td>{{ cur | date: "%A, %b %-d"}}</td>  <!-- Lecture 12 -->
     <td>
       ConvNets for spatial localization<br>
       Object detection
     </td>
     <td>
+      {% if release_day >= cur %}
         <a href="https://docs.google.com/presentation/d/1LUVaGef1fglRqob3hkWIn899_Ueczx6WUv6j35ByDpc/edit?usp=sharing">[slides]</a><br>
         <a href="https://arxiv.org/abs/1512.03385">ResNet</a> (optional)<br>
         <a href="http://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Long_Fully_Convolutional_Networks_2015_CVPR_paper.pdf">FCN</a> (optional)<br>
         <a href="http://cs231n.stanford.edu/2017/reports.html">[Stanford cs231n project reports: spring 2017]</a><br>
         <a href="http://cs231n.stanford.edu/2016/reports.html">[Stanford cs231n project reports: winter 2016]</a><br>
         <a href="http://cs231n.stanford.edu/2015/reports.html">[Stanford cs231n project reports: winter 2015</a>
+      {% endif %}
     </td>
   </tr>
+  {% assign cur = 42 | times: 86400 | plus: start %}
   <tr>
     <td>Lecture</td>
-    <td>{{ 42 | times: 86400 | plus: start | date: "%A, %b %-d"}}</td>  <!-- Lecture 13 -->
+    <td>{{ cur | date: "%A, %b %-d"}}</td>  <!-- Lecture 13 -->
     <td>
       ConvNets for spatial localization<br>
       Object detection... continued
     </td>
     <td>
-
+      {% if release_day >= cur %}
+      {% endif %}
     </td>
   </tr>
+  {% assign cur = 44 | times: 86400 | plus: start %}
   <tr>
     <td>Lecture</td>
-    <td>{{ 44 | times: 86400 | plus: start | date: "%A, %b %-d"}}</td>  <!-- Lecture 14 -->
+    <td>{{ cur | date: "%A, %b %-d"}}</td>  <!-- Lecture 14 -->
     <td>
       Object detection... continued
     </td>
     <td>
-      <a href="https://ezyang.github.io/convolution-visualizer/index.html">A tool to visualize convolutions</a>
+      {% if release_day >= cur %}
+        <a href="https://ezyang.github.io/convolution-visualizer/index.html">A tool to visualize convolutions</a>
+      {% endif %}
     </td>
   </tr>
+  {% assign cur = 49 | times: 86400 | plus: start %}
   <tr>
     <td>Lecture</td>
-    <td>{{ 49 | times: 86400 | plus: start | date: "%A, %b %-d"}}</td> <!-- Lecture 14 cont -->
+    <td>{{ cur | date: "%A, %b %-d"}}</td> <!-- Lecture 14 cont -->
     <td>
       Understanding and visualizing Convolutional Neural Networks... continued<br>
     </td>
     <td>
-      <a href="https://docs.google.com/presentation/d/1Va3fa3vPGPrHpqO9ToiMNROtJ-ACyyaIHlYnoL97En4/edit?usp=sharing">[slides]</a><br>
-      <a href="notes/understanding-cnn/">[visualization notes]</a><br>
-
+      {% if release_day >= cur %}
+        <a href="https://docs.google.com/presentation/d/1Va3fa3vPGPrHpqO9ToiMNROtJ-ACyyaIHlYnoL97En4/edit?usp=sharing">[slides]</a><br>
+        <a href="notes/understanding-cnn/">[visualization notes]</a><br>
+      {% endif %}
     </td>
   </tr>
   <!-- <tr class="success">
@@ -314,54 +362,65 @@ permalink: /lectures.html
     <td>
     </td>
   </tr> -->
+  {% assign cur = 51 | times: 86400 | plus: start %}
   <tr>
     <td>Lecture</td>
-    <td>{{ 51 | times: 86400 | plus: start | date: "%A, %b %-d"}}</td>
+    <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
       Backprop into image: Visualizations, deep dream
     </td>
     <td>
-
+      {% if release_day >= cur %}
+      {% endif %}
     </td>
   </tr>
+  {% assign cur = 56 | times: 86400 | plus: start %}
   <tr>
     <td>Lecture</td>
-    <td>{{ 56 | times: 86400 | plus: start | date: "%A, %b %-d"}}</td> <!-- Lecture 15/16 -->
+    <td>{{ cur | date: "%A, %b %-d"}}</td> <!-- Lecture 15/16 -->
     <td>
       Neural Texture Synthesis and Style Transfer<br>
       Creating Adversarial Examples
     </td>
     <td>
-      <a href="https://docs.google.com/presentation/d/1wXgv4a12IxZKu2ZcibSBk_y-pqqfWZ0xKgLHFnVH6uI/edit?usp=sharing">[slides]</a><br>
-      <a href="https://docs.google.com/presentation/d/1Ff_s5QRb-X5HIdsbH9CfCUaVGUIsBQo1F7yBoglvuiY/edit?usp=sharing">[slides]</a>
-    </td>
+      {% if release_day >= cur %}
+        <a href="https://docs.google.com/presentation/d/1wXgv4a12IxZKu2ZcibSBk_y-pqqfWZ0xKgLHFnVH6uI/edit?usp=sharing">[slides]</a><br>
+        <a href="https://docs.google.com/presentation/d/1Ff_s5QRb-X5HIdsbH9CfCUaVGUIsBQo1F7yBoglvuiY/edit?usp=sharing">[slides]</a>
+      {% endif %}
+      </td>
   </tr>
+  {% assign cur = 58 | times: 86400 | plus: start %}
   <tr>
     <td>Lecture</td>
-    <td>{{ 58 | times: 86400 | plus: start | date: "%A, %b %-d"}}</td>
+    <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
       Generative Adversarial Networks
     </td>
     <td>
-      <a href="https://docs.google.com/presentation/d/1DxDCbVU7HrzPTUGZQdMCMpPnRiJPIKNNLLtjOc67oXE/edit?usp=sharing">[slides]</a><br>
-      <a href="https://www.youtube.com/watch?v=kSLJriaOumA">[Style-GAN]</a><br>
-      <a href="https://www.youtube.com/watch?v=0zaGYLPj4Kk">[Alias-Free GAN]</a>
-    </td>
+      {% if release_day >= cur %}
+        <a href="https://docs.google.com/presentation/d/1DxDCbVU7HrzPTUGZQdMCMpPnRiJPIKNNLLtjOc67oXE/edit?usp=sharing">[slides]</a><br>
+        <a href="https://www.youtube.com/watch?v=kSLJriaOumA">[Style-GAN]</a><br>
+        <a href="https://www.youtube.com/watch?v=0zaGYLPj4Kk">[Alias-Free GAN]</a>
+      {% endif %}
+      </td>
   </tr>
+  {% assign cur = 63 | times: 86400 | plus: start %}
   <tr>
     <td>Lecture</td>
-    <td>{{ 63 | times: 86400 | plus: start | date: "%A, %b %-d"}}</td>
+    <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
       Recurrent Neural Networks<br>
       Long Short Term Memory (LSTM)
     </td>
     <td>
-      <a href="https://docs.google.com/presentation/d/1bsoVduW8a9Hs-T684gnzSkU97nfMAYowu-2GES3aaCE/edit?usp=sharing">[slides]</a><br>
-      <a href="http://www.deeplearningbook.org/contents/rnn.html">DL book RNN chapter</a> (optional)<br>
-      <a href="https://gist.github.com/karpathy/d4dee566867f8291f086">min-char-rnn</a>, <a href="https://github.com/karpathy/char-rnn">char-rnn</a>, <a href="https://github.com/karpathy/neuraltalk2">neuraltalk2</a><br>
-      <a href="http://karpathy.github.io/2015/05/21/rnn-effectiveness/">The Unreasonable Effectiveness of RNN</a> (optional) <br>
-      <a href="http://colah.github.io/posts/2015-08-Understanding-LSTMs/">Understanding LSTM Networks</a> (optional)
-    </td>
+      {% if release_day >= cur %}
+        <a href="https://docs.google.com/presentation/d/1bsoVduW8a9Hs-T684gnzSkU97nfMAYowu-2GES3aaCE/edit?usp=sharing">[slides]</a><br>
+        <a href="http://www.deeplearningbook.org/contents/rnn.html">DL book RNN chapter</a> (optional)<br>
+        <a href="https://gist.github.com/karpathy/d4dee566867f8291f086">min-char-rnn</a>, <a href="https://github.com/karpathy/char-rnn">char-rnn</a>, <a href="https://github.com/karpathy/neuraltalk2">neuraltalk2</a><br>
+        <a href="http://karpathy.github.io/2015/05/21/rnn-effectiveness/">The Unreasonable Effectiveness of RNN</a> (optional) <br>
+        <a href="http://colah.github.io/posts/2015-08-Understanding-LSTMs/">Understanding LSTM Networks</a> (optional)
+      {% endif %}
+      </td>
   </tr>
   <tr class="success">
     <td>Optional Discussion</td>
@@ -370,84 +429,101 @@ permalink: /lectures.html
     <td>
     </td>
   </tr>
+  {% assign cur = 65| times: 86400 | plus: start %}
   <tr>
     <td>Lecture</td>
-    <td>{{ 65 | times: 86400 | plus: start | date: "%A, %b %-d"}}</td>
+    <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
       RNN's: continued
     </td>
     <td>
+      {% if release_day >= cur %}
+      {% endif %}
     </td>
   </tr>
+  {% assign cur = 70 | times: 86400 | plus: start %}
   <tr>
     <td>Lecture</td>
-    <td>{{ 70 | times: 86400 | plus: start | date: "%A, %b %-d"}}</td>
+    <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
       No class
     </td>
     <td></td>
   </tr>
+  {% assign cur = 72 | times: 86400 | plus: start %}
   <tr>
     <td>Lecture</td>
-    <td>{{ 72 | times: 86400 | plus: start | date: "%A, %b %-d"}}</td>
+    <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
       Exam Review
     </td>
     <td>
     </td>
   </tr>
+  {% assign cur = 77 | times: 86400 | plus: start %}
   <tr class="danger">
     <td>Mid-Term</td>
-    <td>{{ 77 | times: 86400 | plus: start | date: "%A, %b %-d"}}</td>
+    <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>Midterm to be held during regular lecture time</td>
     <td></td>
   </tr>
+  {% assign cur = 79 | times: 86400 | plus: start %}
   <tr>
     <td>Lecture</td>
-    <td>{{ 79 | times: 86400 | plus: start | date: "%A, %b %-d"}}</td>
+    <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
       Do word embeddings, ElMO? Attention and Self-Attention in NLP Transformers
     </td>
     <td>
-      <a href="https://docs.google.com/presentation/d/12GFQqJmrfZ29beWLgZsGq4lzhVM0K6umEBvyyWjEUxQ/edit?usp=sharing">[slides]</a><br>
-      <a href="notes/682_Midterm_Review_Fall_2021.pdf">[review sheet]</a><br>
+      {% if release_day >= cur %}
+        <a href="https://docs.google.com/presentation/d/12GFQqJmrfZ29beWLgZsGq4lzhVM0K6umEBvyyWjEUxQ/edit?usp=sharing">[slides]</a><br>
+        <a href="notes/682_Midterm_Review_Fall_2021.pdf">[review sheet]</a><br>
+      {% endif %}
     </td>
   </tr>
+  {% assign cur = 84 | times: 86400 | plus: start %}
   <tr>
     <td>Lecture</td>
-    <td>{{ 84 | times: 86400 | plus: start | date: "%A, %b %-d"}}</td>
+    <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
       No class
     </td>
     <td>
     </td>
   </tr>
+  {% assign cur = 86 | times: 86400 | plus: start %}
   <tr>
     <td>Lecture</td>
-    <td>{{ 86 | times: 86400 | plus: start | date: "%A, %b %-d"}}</td>
+    <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
       Guest Lecture on Transformers by Andrew Drozdov
     </td>
     <td>
-      <a href="notes/cs682-transformers.pdf">[Slides]</a><br>
+      {% if release_day >= cur %}
+        <a href="notes/cs682-transformers.pdf">[Slides]</a><br>
+      {% endif %}
     </td>
   </tr>
+  {% assign cur = 91 | times: 86400 | plus: start %}
   <tr>
     <td>Lecture</td>
-    <td>{{ 91 | times: 86400 | plus: start | date: "%A, %b %-d"}}</td>
+    <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
       TBD
     </td>
     <td>
     </td>
   </tr>
+  {% assign cur = 93 | times: 86400 | plus: start %}
   <tr>
     <td>Lecture</td>
-    <td>{{ 93 | times: 86400 | plus: start | date: "%A, %b %-d"}}</td>
+    <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
       Last lecture
     </td>
     <td>
+      {% if release_day >= cur %}
+      {% endif %}
     </td>
   </tr>
 </tbody></table>
