@@ -278,6 +278,19 @@ permalink: /lectures.html
   </tr>
   {% assign cur = 35 | times: 86400 | plus: start %}
   <tr>
+    <td>Lecture</td>
+    <td>{{ cur | date: "%A, %b %-d"}}</td>
+    <td>
+        Monday schedule, no class
+    </td>
+    <td>
+      {% if release_day >= cur %}
+        <a href="https://docs.google.com/presentation/d/1U2ijqAYtgQf8yG8swZhuAJFTSqRf7kSl8Pj4ZxHndLk/edit?usp=sharing">[slides]</a>
+      {% endif %}
+    </td>
+  </tr>
+  {% assign cur = 37 | times: 86400 | plus: start %}
+  <tr>
     <td>Lecture</td>  <!-- Lecture 11 -->
     <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
@@ -289,7 +302,7 @@ permalink: /lectures.html
       {% endif %}
     </td>
   </tr>
-  {% assign cur = 37 | times: 86400 | plus: start %}
+  {% assign cur = 42 | times: 86400 | plus: start %}
   <tr>
     <td>Lecture</td>
     <td>{{ cur | date: "%A, %b %-d"}}</td>  <!-- Lecture 12 -->
@@ -315,38 +328,25 @@ permalink: /lectures.html
     <td>
     </td>
   </tr>
-  {% assign cur = 42 | times: 86400 | plus: start %}
+  {% assign cur = 44 | times: 86400 | plus: start %}
   <tr>
     <td>Lecture</td>
     <td>{{ cur | date: "%A, %b %-d"}}</td>  <!-- Lecture 13 -->
     <td>
       ConvNets for spatial localization<br>
-      Object detection... continued
+      Image segmentation
     </td>
     <td>
       {% if release_day >= cur %}
-      {% endif %}
-    </td>
-  </tr>
-  {% assign cur = 44 | times: 86400 | plus: start %}
-  <tr>
-    <td>Lecture</td>
-    <td>{{ cur | date: "%A, %b %-d"}}</td>  <!-- Lecture 14 -->
-    <td>
-      Object detection... continued
-    </td>
-    <td>
-      {% if release_day >= cur %}
-        <a href="https://ezyang.github.io/convolution-visualizer/index.html">A tool to visualize convolutions</a>
       {% endif %}
     </td>
   </tr>
   {% assign cur = 49 | times: 86400 | plus: start %}
   <tr>
     <td>Lecture</td>
-    <td>{{ cur | date: "%A, %b %-d"}}</td> <!-- Lecture 14 cont -->
+    <td>{{ cur | date: "%A, %b %-d"}}</td>  <!-- Lecture 14 -->
     <td>
-      Understanding and visualizing Convolutional Neural Networks... continued<br>
+      Understanding and visualizing Convolutional Neural Networks
     </td>
     <td>
       {% if release_day >= cur %}
@@ -379,8 +379,7 @@ permalink: /lectures.html
     <td>Lecture</td>
     <td>{{ cur | date: "%A, %b %-d"}}</td> <!-- Lecture 15/16 -->
     <td>
-      Neural Texture Synthesis and Style Transfer<br>
-      Creating Adversarial Examples
+      Neural Texture Synthesis and Style Transfer
     </td>
     <td>
       {% if release_day >= cur %}
@@ -394,7 +393,7 @@ permalink: /lectures.html
     <td>Lecture</td>
     <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
-      Generative Adversarial Networks
+      <i>James Tompkin, MLFL</i>
     </td>
     <td>
       {% if release_day >= cur %}
@@ -409,8 +408,7 @@ permalink: /lectures.html
     <td>Lecture</td>
     <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
-      Recurrent Neural Networks<br>
-      Long Short Term Memory (LSTM)
+      Neuro Symbolic AI
     </td>
     <td>
       {% if release_day >= cur %}
@@ -427,7 +425,7 @@ permalink: /lectures.html
     <td>Lecture</td>
     <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
-      RNN's: continued
+      Embodied AI
     </td>
     <td>
       {% if release_day >= cur %}
@@ -446,25 +444,25 @@ permalink: /lectures.html
     <td>Lecture</td>
     <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
-      No class
+      Midterm Review
     </td>
     <td></td>
   </tr>
   {% assign cur = 72 | times: 86400 | plus: start %}
-  <tr>
+  <tr class="danger">
     <td>Lecture</td>
     <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
-      Exam Review
+      Midterm to be held during regular lecture time
     </td>
     <td>
     </td>
   </tr>
   {% assign cur = 77 | times: 86400 | plus: start %}
-  <tr class="danger">
+  <tr>
     <td>Mid-Term</td>
     <td>{{ cur | date: "%A, %b %-d"}}</td>
-    <td>Midterm to be held during regular lecture time</td>
+    <td>Generative AI</td>
     <td></td>
   </tr>
   {% assign cur = 79 | times: 86400 | plus: start %}
@@ -472,7 +470,7 @@ permalink: /lectures.html
     <td>Lecture</td>
     <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
-      Do word embeddings, ElMO? Attention and Self-Attention in NLP Transformers
+      Thanksgiving, no class
     </td>
     <td>
       {% if release_day >= cur %}
@@ -486,17 +484,7 @@ permalink: /lectures.html
     <td>Lecture</td>
     <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
-      No class
-    </td>
-    <td>
-    </td>
-  </tr>
-  {% assign cur = 86 | times: 86400 | plus: start %}
-  <tr>
-    <td>Lecture</td>
-    <td>{{ cur | date: "%A, %b %-d"}}</td>
-    <td>
-      Guest Lecture on Transformers by Andrew Drozdov
+      Large Language Model
     </td>
     <td>
       {% if release_day >= cur %}
@@ -504,14 +492,26 @@ permalink: /lectures.html
       {% endif %}
     </td>
   </tr>
+  {% assign cur = 86 | times: 86400 | plus: start %}
+  <tr>
+    <td>Lecture</td>
+    <td>{{ cur | date: "%A, %b %-d"}}</td>
+    <td>
+      <i>Sara Beery, MLFL</i>
+    </td>
+    <td>
+    </td>
+  </tr>
   {% assign cur = 91 | times: 86400 | plus: start %}
   <tr>
     <td>Lecture</td>
     <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
-      TBD
+      Multi-modal stuff
     </td>
     <td>
+      {% if release_day >= cur %}
+      {% endif %}
     </td>
   </tr>
   {% assign cur = 93 | times: 86400 | plus: start %}
@@ -519,7 +519,7 @@ permalink: /lectures.html
     <td>Lecture</td>
     <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
-      Last lecture
+      AI for ecology
     </td>
     <td>
       {% if release_day >= cur %}
