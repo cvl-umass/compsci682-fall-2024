@@ -4,7 +4,7 @@ title: Jupyter Notebook Tutorial
 permalink: /notes/jupyter-tutorial/
 ---
 
-In this class, we will use [Jupyter Notebook](http://jupyter.org/) for the
+In this class, you may use [Jupyter Notebook](http://jupyter.org/) for the
 programming assignments. A Jupyter notebook lets you write and execute Python
 code in your web browser. Jupyter notebooks make it very easy to tinker with
 code and execute it in bits and pieces; for this reason Jupyter notebooks are

@@ -99,6 +99,7 @@ permalink: /lectures.html
         {% if release_day >= cur %}
           <a href="https://docs.google.com/presentation/d/1b1o2tRsnKRVoE_FsR3wWQ3Hw_6nhobFksIhCgZrHmdI/edit?usp=sharing">[slides]</a><br>
           <a href="notes/python-numpy-tutorial/">[python/numpy tutorial]</a><br>
+          <a href="{{site.baseurl}}/setup-instructions/">[colab tutorial]</a><br>
           <a href="notes/jupyter-tutorial/">[jupyter tutorial]</a>
         {% endif %}
       </td>
@@ -277,7 +278,7 @@ permalink: /lectures.html
     </td>
   </tr>
   {% assign cur = 35 | times: 86400 | plus: start %}
-  <tr>
+  <tr class="active">
     <td>Lecture</td>
     <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
@@ -466,7 +467,7 @@ permalink: /lectures.html
     <td></td>
   </tr>
   {% assign cur = 79 | times: 86400 | plus: start %}
-  <tr>
+  <tr class="active">
     <td>Lecture</td>
     <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
