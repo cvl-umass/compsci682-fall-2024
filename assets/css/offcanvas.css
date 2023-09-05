@@ -32,8 +32,9 @@ footer {
   margin-right: 20px;
 }
 .instructor2 {
-  display: inline-block;
   text-align: center;
+  padding-bottom: 8px;
+  margin-right: 20%;
 }
 
 /*
