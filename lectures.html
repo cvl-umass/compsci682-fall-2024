@@ -98,6 +98,7 @@ permalink: /lectures.html
       <td>Intro to Deep Learning, historical context.</td>
       <td>
         {% if release_day >= cur %}
+          <a href="https://echo360.org/media/3581977a-e029-4bfb-8ddc-d13d2b311a7e/public">[lecture recording]</a><br>
           <a href="{{site.baseurl}}/docs/lecture1fall2023.pdf">[slides]</a><br>
           <a href="notes/python-numpy-tutorial/">[python/numpy tutorial]</a><br>
           <a href="{{site.baseurl}}/setup-instructions/">[software setup for assignments]</a><br>
@@ -119,7 +120,7 @@ permalink: /lectures.html
       <!-- <td>To be announced</td> -->
       <td>
         {% if release_day >= cur %}
-          <!-- <a href="https://docs.google.com/presentation/d/1zqU2vrqCCsd2cLpOG0ZHI8Lhe09wtmcHriyOf7Zn7JA/edit?usp=sharing">[slides]</a><br> -->
+          <!-- <a href="{{site.baseurl}}/docs/lecture2fall2023.pdf">[slides]</a><br> -->
           <a href="notes/classification/">[image classification notes]</a><br>
           <a href="notes/linear-classify/">[linear classification notes]</a><br>
         {% endif %}
@@ -133,7 +134,7 @@ permalink: /lectures.html
     <td>Loss Functions <br> Optimization</td>
     <td>
       {% if release_day >= cur %}
-        <a href="https://docs.google.com/presentation/d/1Ka5eZgNOSBrMxOSOrik0G5iO-LBNBPRLlk_fmyuanRU/edit?usp=sharing">[slides]</a><br>
+        <a href="{{site.baseurl}}/docs/lecture3fall2023.pdf">[slides]</a><br>
       {% endif %}
     </td>
   </tr>
@@ -146,7 +147,7 @@ permalink: /lectures.html
     </td>
     <td>
         {% if release_day >= cur %}
-        <a href="https://docs.google.com/presentation/d/1baPO9rghPBNdNhJ6XDBDXhQPpEAJHxVFz0n9Nqbff34/edit?usp=sharing">[slides]</a><br>
+        <a href="{{site.baseurl}}/docs/lecture4fall2023.pdf">[slides]</a><br>
         <a href="notes/optimization-2/">[backprop notes]</a><br>
         <a href="http://yann.lecun.com/exdb/publis/pdf/lecun-98b.pdf">[Efficient BackProp]</a> (optional)<br>
         related: <a href="http://colah.github.io/posts/2015-08-Backprop/">[1]</a>, <a href="http://neuralnetworksanddeeplearning.com/chap2.html">[2]</a>, <a href="https://www.youtube.com/watch?v=q0pm3BrIUFo">[3]</a> (optional)
@@ -171,7 +172,7 @@ permalink: /lectures.html
     </td>
     <td>
       {% if release_day >= cur %}
-        <a href="https://docs.google.com/presentation/d/1zTwZ-Vc0s9d33ruZaRDWkWtV5pucFufX5gF-Sje6WeM/edit?usp=sharing">[slides]</a><br>
+        <a href="{{site.baseurl}}/docs/lecture5fall2023.pdf">[slides]</a><br>
         handout 1: <a href="{{site.baseurl}}/docs/vecDerivs.pdf">Vector, Matrix, and Tensor Derivatives</a><br>
         handout 2: <a href="http://cs231n.stanford.edu/handouts/derivatives.pdf">Derivatives, Backpropagation, and Vectorization</a><br>
         <a href="http://www.nature.com/nature/journal/v521/n7553/full/nature14539.html">Deep Learning [Nature]</a> (optional)
@@ -303,6 +304,13 @@ permalink: /lectures.html
       {% endif %}
     </td>
   </tr>
+  <tr class="success">
+    <td>Optional Discussion</td>
+    <td>Friday, Oct. 13</td>
+    <td>Batch normalization</td>
+    <td>
+    </td>
+  </tr>
   {% assign cur = 42 | times: 86400 | plus: start %}
   <tr>
     <td>Lecture</td>
@@ -320,13 +328,6 @@ permalink: /lectures.html
         <a href="http://cs231n.stanford.edu/2016/reports.html">[Stanford cs231n project reports: winter 2016]</a><br>
         <a href="http://cs231n.stanford.edu/2015/reports.html">[Stanford cs231n project reports: winter 2015</a>
       {% endif %}
-    </td>
-  </tr>
-  <tr class="success">
-    <td>Optional Discussion</td>
-    <td>Friday, Oct. 13</td>
-    <td>Batch normalization</td>
-    <td>
     </td>
   </tr>
   {% assign cur = 44 | times: 86400 | plus: start %}
