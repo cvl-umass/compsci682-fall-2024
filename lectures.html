@@ -84,7 +84,7 @@ permalink: /lectures.html
       </div>
         <div class="panel panel-default">
 {% assign start = '05-09-2023 10:00:00' | date: '%s' %}
-{% assign delta = 2 | times: 86400 %}
+{% assign delta = 1 | times: 86400 %}
 {% assign release_day = site.time | date: '%s' | plus: delta %}
 {% assign cur = 0 | times: 86400 | plus: start %}
 <table class="table">
@@ -119,7 +119,7 @@ permalink: /lectures.html
       <!-- <td>To be announced</td> -->
       <td>
         {% if release_day >= cur %}
-          <a href="https://docs.google.com/presentation/d/1zqU2vrqCCsd2cLpOG0ZHI8Lhe09wtmcHriyOf7Zn7JA/edit?usp=sharing">[slides]</a><br>
+          <!-- <a href="https://docs.google.com/presentation/d/1zqU2vrqCCsd2cLpOG0ZHI8Lhe09wtmcHriyOf7Zn7JA/edit?usp=sharing">[slides]</a><br> -->
           <a href="notes/classification/">[image classification notes]</a><br>
           <a href="notes/linear-classify/">[linear classification notes]</a><br>
         {% endif %}
