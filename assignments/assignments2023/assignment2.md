@@ -1,7 +1,7 @@
 ---
 layout: page
 mathjax: true
-permalink: /assignments/assignments2021/assignment2/
+permalink: /assignments/assignments2023/assignment2/
 ---
 
 In this assignment you will practice writing backpropagation code, and training
@@ -20,7 +20,7 @@ are as follows:
   gain experience with training these models on data
 
 ### Setup
-Get the code as a zip file [here](https://raw.githubusercontent.com/compsci682-fa21/compsci682-fa21.github.io/master/assignments/assignments2021/assignment2.zip). 
+Get the code as a zip file [here](https://raw.githubusercontent.com/compsci682-fa21/compsci682-fa21.github.io/master/assignments/assignments2023/assignment2.zip). 
 
 **Download data:**
 Once you have the starter code, you will need to download the CIFAR-10 dataset.

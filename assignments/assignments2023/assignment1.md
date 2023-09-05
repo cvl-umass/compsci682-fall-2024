@@ -1,10 +1,10 @@
 ---
 layout: page
 mathjax: true
-permalink: /assignments/assignments2021/assignment1/
+permalink: /assignments/assignments2023/assignment1/
 ---
 
-Get the code as a zip file [here](https://github.com/cvl-umass/compsci682-fall-2023/raw/main/assignments/assignments2021/assignment1.zip). 
+Get the code as a zip file [here](https://github.com/cvl-umass/compsci682-fall-2023/raw/main/assignments/assignments2023/assignment1.zip). 
 
 - [Setup](#setup)
 - [Goals](#goals)
@@ -18,7 +18,7 @@ Get the code as a zip file [here](https://github.com/cvl-umass/compsci682-fall-2
 
 ### Setup
 
-Please familiarize yourself with the [recommended workflow]({{site.baseurl}}/setup-instructions/#working-remotely-on-google-colaboratory) before starting the assignment. You should also watch the Colab walkthrough tutorial below.
+Please familiarize yourself with the [recommended workflow]({{site.baseurl}}/setup-instructions/#working-remotely-on-google-colaboratory) before starting the assignment. 
 
 The assignment would be using Python = 3.6
 
@@ -27,20 +27,31 @@ The assignment would be using Python = 3.6
 Once you have completed all Colab notebooks **except `collect_submission.ipynb`**, proceed to the [submission instructions](#submitting-your-work).
 
 
+**Colab:**
+If using colab, make a new folder, (ex. `cs682`) in google drive and upload the `assignment1` folder. After opening any notebook in colab you will need to uncomment and run the first code cell to mount google drive and cd into the `assignment1` directory. 
 
 **Download data:**
 Once you have the starter code, you will need to download the CIFAR-10 dataset.
-Run the following from the `assignment1` directory:
+
+Inside a colab notebook (ex. `knn.ipynb`), you can create a new cell (`Insert -> Code cell`) and run the following:
+
+```
+%cd ./cs682/datasets
+!bash get_datasets.sh
+%cd ../../
+```
+
+Alternatively, on your local comptuer run the following from the `assignment1` directory:
 
 ```bash
-cd datasets
+cd ./cs682/datasets
 ./get_datasets.sh
 ```
 
-**Start Jupyter Notebook:**
-After you have the CIFAR-10 data, you should start the Jupyter Notebook server from the
+**Jupyter Notebook:**
+After you have the CIFAR-10 data, if you are not using colab you should start the Jupyter Notebook server from the
 `assignment1` directory. If you are unfamiliar with Jupyter, you should read our
-[Jupyter tutorial]({{site.baseurl}}/notes/jupyter-tutorial/).
+[Jupyter tutorial]({{site.baseurl}}/setup-instructions/#jupyter-setup).
 
 **NOTE:** If you are working in a virtual environment on OSX, you may encounter
 errors with matplotlib due to the [issues described here](http://matplotlib.org/faq/virtualenv_faq.html). You can work around this issue by starting the Jupyter server using the `start_jupyter_osx.sh` script from the `assignment1` directory; the script assumes that your virtual environment is named `.env`.
@@ -90,7 +101,7 @@ Once you have completed all notebooks and filled out the necessary code, you nee
 
 To make sure everything is working properly, **remember to do a clean run ("Kernel -> Restart & Run All") after you finish work for each notebook** and submit the final version with all the outputs. 
 
-**1.** Generate a zip file of your code (`.py` and `.ipynb`) called `<UmassID>.zip` (For email address `arnaik@umass.edu` - zip file name is `arnaik.zip`). Please ensure you donot include the dataset folder in the zip.
+**1.** Generate a zip file of your code (`.py` and `.ipynb`) called `<UmassID>.zip` (For email address `arnaik@umass.edu` - zip file name is `arnaik.zip`). Please ensure you do not include the dataset folder in the zip.
 
 **2.** Convert all notebooks (`.ipynb` files) into a single PDF file.
 
