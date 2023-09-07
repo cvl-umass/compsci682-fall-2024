@@ -28,7 +28,7 @@ Once you have completed all Colab notebooks **except `collect_submission.ipynb`*
 
 
 **Colab:**
-If using colab, make a new folder, (ex. `cs682`) in google drive and upload the `assignment1` folder. After opening any notebook in colab you will need to uncomment and run the first code cell to mount google drive and cd into the `assignment1` directory. 
+If using colab, make a new folder, (ex. `cs682`) in google drive and upload the `assignment1` folder. After opening any notebook in colab you will need to uncomment and run the first code cell. This will mount google drive and cd into the `assignment1` directory. Do not forget to answer the inline questions. To write your response click on the text and then click the edit pencil icon that appears in the top right.
 
 **Download data:**
 Once you have the starter code, you will need to download the CIFAR-10 dataset.
@@ -103,8 +103,8 @@ To make sure everything is working properly, **remember to do a clean run ("Kern
 
 **1.** Generate a zip file of your code (`.py` and `.ipynb`) called `<UmassID>.zip` (For email address `arnaik@umass.edu` - zip file name is `arnaik.zip`). Please ensure you do not include the dataset folder in the zip.
 
+If you run code on your local machine on Linux or macOS,  you can run the provided `collectSubmission.sh` script from `assignment1/` to produce a file `<UmassID>.zip`. Alternatively, in any colab notebook you can run the command `!bash collectSubmission.sh`. Make sure to rename the zip to `<UmassID>.zip`.
+
 **2.** Convert all notebooks (`.ipynb` files) into a single PDF file.
 
 **3.** Please submit <UmassID>.zip and the pdf to Gradescope.
-
-If you run code on your local machine on Linux or macOS,  you can run the provided `collectSubmission.sh` script from `assignment1/` to produce a file `<UmassID>.zip`.
