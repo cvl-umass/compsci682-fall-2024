@@ -105,6 +105,6 @@ To make sure everything is working properly, **remember to do a clean run ("Kern
 
 If you run code on your local machine on Linux or macOS,  you can run the provided `collectSubmission.sh` script from `assignment1/` to produce a file `<UmassID>.zip`. Alternatively, in any colab notebook you can run the command `!bash collectSubmission.sh`. Make sure to rename the zip to `<UmassID>.zip`.
 
-**2.** Convert all notebooks (`.ipynb` files) into a single PDF file.
+**2.** Convert all notebooks (`.ipynb` files) into a single PDF file. In colab this can be done by selecting `File -> Print -> Print to PDF`.
 
 **3.** Please submit <UmassID>.zip and the pdf to Gradescope.
