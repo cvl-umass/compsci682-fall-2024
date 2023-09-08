@@ -20,7 +20,7 @@ Get the code as a zip file [here](https://github.com/cvl-umass/compsci682-fall-2
 
 Please familiarize yourself with the [recommended workflow]({{site.baseurl}}/setup-instructions/#working-remotely-on-google-colaboratory) before starting the assignment. 
 
-The assignment would be using Python = 3.6
+The assignment would be using Python = 3.10
 
 **Note**. Ensure you are periodically saving your notebook (`File -> Save`) so that you don't lose your progress if you step away from the assignment and the Colab VM disconnects.
 

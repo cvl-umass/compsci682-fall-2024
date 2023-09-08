@@ -1,7 +1,7 @@
 ---
 layout: page
 mathjax: true
-permalink: /assignments/assignments2023/assignment3/
+permalink: /assignments/assignments2023/assignment3hidden/
 ---
 
 **This assignment is due on Sunday, November 21 at 11:55pm EST.**
@@ -25,7 +25,7 @@ If you face difficulty re-using the python environment used in ealier assignment
 
 ```bash
 conda remove --name cs682 --all # delete old environment if there is one
-conda create --name cs682 python=3.6
+conda create --name cs682 python=3.10
 conda activate cs682
 pip install -r requirements.txt
 conda install pytorch torchvision cpuonly -c pytorch

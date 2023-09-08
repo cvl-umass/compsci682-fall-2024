@@ -48,17 +48,17 @@ If you're interested in learning more about Colab, we encourage you to visit the
 * [Overview of Colab Features](https://colab.research.google.com/notebooks/basic_features_overview.ipynb)
 
 ### Working locally on your machine
-If you do not want to use Google Colaboratory and wish to work locally, you should use a virtual environment. You can install one via Anaconda (recommended) or via Python's native `virtualenv` module. Ensure you are using Python 3.6 as **we are no longer supporting Python 2**.
+If you do not want to use Google Colaboratory and wish to work locally, you should use a virtual environment. You can install one via Anaconda (recommended) or via Python's native `virtualenv` module. Ensure you are using Python 3.10 as **we are no longer supporting Python 2**.
 
 #### Anaconda virtual environment
-We strongly recommend using the free [Anaconda Python distribution](https://www.anaconda.com/download/), which provides an easy way for you to handle package dependencies. Please be sure to download the Python 3 version, which currently installs Python 3.6. The neat thing about Anaconda is that it ships with [MKL optimizations](https://docs.anaconda.com/mkl-optimizations/) by default, which means your `numpy` and `scipy` code benefit from significant speed-ups without having to change a single line of code.
+We strongly recommend using the free [Anaconda Python distribution](https://www.anaconda.com/download/), which provides an easy way for you to handle package dependencies. Please be sure to download the Python 3 version, which currently installs Python 3.10. The neat thing about Anaconda is that it ships with [MKL optimizations](https://docs.anaconda.com/mkl-optimizations/) by default, which means your `numpy` and `scipy` code benefit from significant speed-ups without having to change a single line of code.
 
 Once you have Anaconda installed, it makes sense to create a virtual environment for the course. If you choose not to use a virtual environment (strongly not recommended!), it is up to you to make sure that all dependencies for the code are installed globally on your machine. To set up a virtual environment called `compsci682`, run the following in your terminal:
 
 ```bash
 # this will create an anaconda environment
 # called compsci682 in 'path/to/anaconda3/envs/'
-conda create -n compsci682 python=3.6
+conda create -n compsci682 python=3.10
 ```
 
 To activate and enter the environment, run `conda activate compsci682`. To deactivate the environment, either run `conda deactivate compsci682` or exit the terminal. Note that every time you want to work on the assignment, you should rerun `conda activate compsci682`.
@@ -85,7 +85,7 @@ If you'd like to (instead of Anaconda) go with a more manual and risky installat
 
 ```bash
 cd cs682
-conda create -n compsci682 python=3.6	# Create environment
+conda create -n compsci682 python=3.10	# Create environment
 conda activate compsci682				# Activate the environment
 pip install -r requirements.txt		# Install dependencies
 conda install jupyter			 # Install Jupyter
@@ -97,7 +97,7 @@ deactivate                       # Exit the virtual environment
 
 ```bash
 cd cs682
-conda create -n compsci682 python=3.6	# Create environment
+conda create -n compsci682 python=3.10	# Create environment
 conda activate compsci682				# Activate the environment
 pip install -r requirements.txt		# Install dependencies
 # Work on the assignment for a while ...
