@@ -84,7 +84,7 @@ permalink: /lectures.html
       </div>
         <div class="panel panel-default">
 {% assign start = '05-09-2023 10:00:00' | date: '%s' %}
-{% assign delta = 1 | times: 86400 %}
+{% assign delta = 2 | times: 86400 %}
 {% assign release_day = site.time | date: '%s' | plus: delta %}
 {% assign cur = 0 | times: 86400 | plus: start %}
 <table class="table">
