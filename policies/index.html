@@ -62,195 +62,62 @@ description: Project
             <li><a href="{{site.baseurl}}/notes/">Notes</a></li>
             <li><a href="{{site.baseurl}}/assignments.html">Assignments</a></li>
             <li><a href="{{site.baseurl}}/projects/">Project</a></li>
-            <li class="active"><a href="{{site.baseurl}}/policies/">Course Policies</a></li>
+            <li class="active"><a href="{{site.baseurl}}/policies/">Policies</a></li>
             <li><a href="{{site.baseurl}}/officehours/">Office Hours</a></li>
           </ul>
         </div><!-- /.nav-collapse -->
       </div><!-- /.container -->
     </nav><!-- /.navbar -->
+      <div class="container">
+        <h2>COMPSCI 682 Neural Networks: A Modern Introduction</h2>
 
-    <div class="container">
-<h2>COMPSCI 682 Neural Networks: A Modern Introduction</h2>
-        <div class="panel panel-success">
+          <div class="panel panel-info">
             <div class="panel-heading">
-                <h3 class="panel-title">Acknowlegements</h3>
+              <h3 class="panel-title">Course policies</h3>
             </div>
             <div class="panel-body">
-                These project guidelines originally accompany the Stanford CS class <a href="http://cs231n.stanford.edu/">CS231n</a>, and are now provided here for
-                the UMass class COMPSCI 682 with minor changes reflecting our course contents. Many thanks to Fei-Fei Li and Andrej Karpathy for graciously letting us use their course materials!
+              <p>Check this page throughout the semester.</p>
             </div>
-        </div>
-<!--
-        <div class="panel panel-info">
-            <div class="panel-heading">
-                <h3 class="panel-title">Announcements</h3>
-            </div>
-            <div class="panel-body">
-                <ul>
-                    <li>All project reports are now available <a href="https://docs.google.com/spreadsheets/d/10rbnBZGXzfDGnTRM8h4Q660ZZ731RSQosZr-RqtlUhU/edit?usp=sharing">here</a>. Check out all the cool projects from your classmates!</li>
-                </ul>
-            </div>
-        </div>
--->
-
-  <h2>Important Dates (tentative)</h2>
-  Course project proposal due: 10/8<br>
-  Course project milestone due: 11/5<br>
-  Final course project write-up due: 12/05<br>
-
-  <h2>Overview</h2>
-  <p>The course project is an opportunity for you to apply what you have learned in class to a problem of your interest.</p>
-
-  <p>Your are encouraged to select a topic and work on your own project. Potential projects usually fall into these two tracks:</p>
-  <ul>
-    <li><strong>Applications.</strong> If you're coming to the class with a specific background and interests (e.g. biology, engineering, physics), we'd love to see you apply deep neural networks to problems related to your particular domain of interest. Pick a real-world problem and apply deep neural networks to solve it. </li>
-    <li><strong>Models.</strong> You can build a new model (algorithm) with deep neural networks, or a new variant of existing models, and apply it to tackle vision tasks. This track might be more challenging, and sometimes leads to a piece of publishable work.</li>
-  </ul>
-
-  <p>Here you can find some sample project ideas professor provided last year:</p>
-  <ul>
-    <li><a href="https://docs.google.com/document/d/1ZAxeXT-Wavxg5RGMu8eYeebRH5uD8BVaY9PcZ70HgOk/edit?usp=sharing">Sample project ideas (Google Docs)</a></li>
-  </ul>
-
-  <p>To inspire ideas, you might look at recent deep learning publications from top-tier vision conferences, as well as other resources below.</p>
-  <ul>
-    <li><a href="https://github.com/kjw0612/awesome-deep-vision">Awesome Deep Vision</a></li>
-    <li><a href="https://openaccess.thecvf.com/CVPR2023?day=all">CVPR</a>: IEEE Conference on Computer Vision and Pattern Recognition</li>
-    <li><a href="https://openaccess.thecvf.com/ICCV2019">ICCV</a>: International Conference on Computer Vision</li>
-    <li><a href="http://www.eccv2016.org/main-conference/">ECCV</a>: European Conference on Computer Vision</li>
-    <li><a href="https://papers.nips.cc/">NIPS</a>: Neural Information Processing Systems</li>
-    <li><a href="https://openreview.net/group?id=ICLR.cc/2023/Conference">ICLR</a>: International Conference on Learning Representations</li>
-    <li><a href="http://www.kaggle.com/">Kaggle challenges</a>: An online machine learning competition website. For example, a <a href="https://www.kaggle.com/c/yelp-restaurant-photo-classification">Yelp classification challenge</a>.</li>
-  </ul>
-
-  <p>For applications, this type of projects would involve careful data preparation, an appropriate loss function, details of training and cross-validation and good test set evaluations and model comparisons. Don't be afraid to think outside of the box. Some successful examples can be found below:</p>
-  <ul>
-    <li><a href="http://arxiv.org/abs/1412.3409">Teaching Deep Convolutional Neural Networks to Play Go</a></li>
-    <li><a href="http://arxiv.org/abs/1312.5602">Playing Atari with Deep Reinforcement Learning</a></li>
-    <li><a href="http://blog.kaggle.com/2014/04/18/winning-the-galaxy-challenge-with-convnets/">Winning the Galaxy Challenge with convnets</a></li>
-  </ul>
-
-  Deep neural networks also run in real time on mobile phones and Raspberry Pi's - feel free to go the embedded way. You may find <a href="https://github.com/tensorflow/tensorflow/tree/master/tensorflow/examples/android">this TensorFlow demo on Android</a> helpful. </p>
-
-  <p>For models, deep neural networks have been successfully used in a variety of computer vision and NLP tasks. This type of projects would involve understanding the state-of-the-art vision or NLP models, and building new models or improving existing models. The list below presents some papers on recent advances of deep neural networks in the computer vision community.</p>
-  <ul>
-    <li><strong>Object recognition</strong>: <a href="http://www.cs.toronto.edu/~fritz/absps/imagenet.pdf">[Krizhevsky et al.]</a>, <a href="http://arxiv.org/abs/1409.0575">[Russakovsky et al.]</a>, <a href="http://arxiv.org/abs/1409.4842">[Szegedy et al.]</a>, <a href="http://arxiv.org/abs/1409.1556">[Simonyan et al.]</a>, <a href="http://arxiv.org/abs/1406.4729">[He et al.]</a></li>
-    <li><strong>Object detection</strong>: <a href="http://arxiv.org/abs/1311.2524">[Girshick et al.]</a>, <a href="http://arxiv.org/abs/1312.6229">[Sermanet et al.]</a>, <a href="http://arxiv.org/abs/1312.2249">[Erhan et al.]</a></li>
-    <li><strong>Image segmentation</strong>: <a href="http://arxiv.org/abs/1411.4038">[Long et al.]</a></li>
-    <li><strong>Video classification</strong>: <a href="https://cs.stanford.edu/people/karpathy/deepvideo/">[Karpathy et al.]</a>, <a href="http://arxiv.org/abs/1406.2199">[Simonyan and Zisserman]</a></li>
-    <li><strong>Scene classification</strong>: <a href="http://places.csail.mit.edu/">[Zhou et al.]</a></li>
-    <li><strong>Face recognition</strong>: <a href="http://www.cv-foundation.org/openaccess/content_cvpr_2014/papers/Taigman_DeepFace_Closing_the_2014_CVPR_paper.pdf">[Taigman et al.]</a></li>
-    <li><strong>Depth estimation</strong>: <a href="http://www.cs.nyu.edu/~deigen/depth/">[Eigen et al.]</a></li>
-    <li><strong>Image-to-sentence generation</strong>: <a href="https://cs.stanford.edu/people/karpathy/deepimagesent/">[Karpathy and Fei-Fei]</a>, <a href="http://arxiv.org/abs/1411.4389">[Donahue et al.]</a>, <a href="http://arxiv.org/abs/1411.4555">[Vinyals et al.]</a></li>
-    <li><strong>Visualization and optimization</strong>: <a href="http://arxiv.org/pdf/1312.6199v4.pdf">[Szegedy et al.]</a>, <a href="http://arxiv.org/abs/1412.1897">[Nguyen et al.]</a>, <a href="http://arxiv.org/abs/1311.2901">[Zeiler and Fergus]</a>, <a href="http://arxiv.org/abs/1412.6572">[Goodfellow et al.]</a>, <a href="http://arxiv.org/abs/1312.6055">[Schaul et al.]</a></li>
-  </ul>
-
-  <p>We also provide a list of popular computer vision datasets:</p>
-
-  <p></p>
-  <ul>
-    <li><a href="http://www.cvpapers.com/datasets.html">Meta Pointer: A large collection organized by CV Datasets.</a></li>
-    <li><a href="http://riemenschneider.hayko.at/vision/dataset/">Yet another Meta pointer</a></li>
-    <li><a href="http://image-net.org/">ImageNet</a>: a large-scale image dataset for visual recognition organized by <a href="http://wordnet.princeton.edu/">WordNet</a> hierarchy</li>
-    <li><a href="http://groups.csail.mit.edu/vision/SUN/">SUN Database</a>: a benchmark for scene recognition and object detection with annotated scene categories and segmented objects</li>
-    <li><a href="http://places.csail.mit.edu/">Places Database</a>: a scene-centric database with 205 scene categories and 2.5 millions of labelled images</li>
-    <li><a href="http://cs.nyu.edu/~silberman/datasets/nyu_depth_v2.html">NYU Depth Dataset v2</a>: a RGB-D dataset of segmented indoor scenes</li>
-    <li><a href="http://cocodataset.org/">Microsoft COCO</a>: a new benchmark for image recognition, segmentation and captioning</li>
-    <li><a href="http://www.multimediacommons.org/">Flickr100M</a>: 100 million creative commons Flickr images</li>
-    <li><a href="http://vis-www.cs.umass.edu/lfw/">Labeled Faces in the Wild</a>: a dataset of 13,000 labeled face photographs</li>
-    <li><a href="http://human-pose.mpi-inf.mpg.de/">Human Pose Dataset</a>: a benchmark for articulated human pose estimation</li>
-    <li><a href="http://www.cs.tau.ac.il/~wolf/ytfaces/">YouTube Faces DB</a>: a face video dataset for unconstrained face recognition in videos</li>
-    <li><a href="http://crcv.ucf.edu/data/UCF101.php">UCF101</a>: an action recognition data set of realistic action videos with 101 action categories</li>
-    <li><a href="http://serre-lab.clps.brown.edu/resource/hmdb-a-large-human-motion-database/">HMDB-51</a>: a large human motion dataset of 51 action classes</li>
-  </ul>
-  <p></p>
-
-  <h2>Grading Policy</h2>
-  <pre>
-  Final Project: (40% of final grade)
-  - Proposal: 5% of the final project (2% of final grade)
-  - Milestone: 12.5% of the final project (5% of final grade)
-  - Final Report: 77.5% of the final project (24% of final grade)
-     write-up: 20% of the final project (8% of final grade)
-      •  clarity, structure, language, references: 3% of final grade
-      •  background literature survey, good understanding of the problem: 3% of final grade
-      •  good insights and discussions of methodology, analysis, results, etc.: 3% of final grade
-    technical: 20% of the final project (8% of final grade)
-      •  correctness
-      •  depth
-      •  innovation
-    evaluation and results: 20% of the final project (8% of final grade)
-      •  sound evaluation metric
-      •  thoroughness in analysis and experimentation
-      •  results and performance
-  - Poster presentation: 5% of the final project (2% of final grade)
-  </pre>
-
-  <h2>Project Proposal</h2>
-  The project proposal should be concise (200-400 words). You can use the provided <a href="https://github.com/cvpr-org/author-kit/archive/refs/tags/CVPR2024-v2.zip">template</a>. Your proposal should contain:
-  <p></p>
-  <ul>
-    <li><strong>Group Members:</strong> Who are the (2~3) group members? What will each person do? (This needs to be a separate detailed paragraph)</li>
-    <li><strong>Motivation:</strong> What is the problem that you will be investigating? Why is it interesting?</li>
-    <li><strong>Literature Review:</strong> What reading will you examine to provide context and background?</li>
-    <li><strong>Data:</strong> What data will you use? If you are collecting new datasets, how do you plan to collect them? If the datasets are huge what compute resources are you using?</li>
-    <li><strong>Approach:</strong> What method or algorithm are you proposing? If there are existing implementations, will you use them and how? How do you plan to improve or modify such implementations?</li>
-    <li><strong>Evaluation Metric:</strong> How will you evaluate your results? Qualitatively, what kind of results do you expect (e.g. plots or figures)? Quantitatively, what kind of analysis will you use to evaluate and/or compare your results (e.g. what performance metrics or statistical tests)?</li>
-    <li><strong>References:</strong> Bibliography of papers based on which your project idea is based.</li>
-  </ul>
-  <p></p>
-  <p>
-    <strong>Submission</strong>: Please upload a PDF file to Gradescope. Please coordinate with your teammate and <strong>submit only under ONE of your accounts</strong>, and add your teammate on Gradescope.
-  </p>
-
-  <h2>Project Milestone</h2>
-  Your project milestone report should be between 2 - 3 pages using the <a href="https://github.com/cvpr-org/author-kit/archive/refs/tags/CVPR2024-v2.zip">provided template</a>. The following is a suggested structure for your report:
-  <p>
-    </p><ul>
-      <li>Title, Author(s)</li>
-      <li>Introduction: this section introduces your problem, and the overall plan for approaching your problem</li>
-      <li>Problem statement: Describe your problem precisely specifying the dataset to be used, expected results and evaluation</li>
-      <li>Technical Approach: Describe the methods you intend to apply to solve the given problem</li>
-      <li>
-      Intermediate/Preliminary Results: State and evaluate your results upto the milestone
-      </li>
-    </ul>
-  <p></p>
-  <p>
-    <strong>Submission</strong>: Please upload a PDF file to Gradescope. Please coordinate with your teammate and <strong>submit only under ONE of your accounts</strong>, and add your teammate on Gradescope.
-  </p>
-
-  <h2>Final Submission</h2>
-  Your final write-up should be between <b>6 - 8</b> pages using the <a href="https://github.com/cvpr-org/author-kit/archive/refs/tags/CVPR2024-v2.zip">provided template</a>. After the class, we will post all the final reports online so that you can read about each others' work. If you do not want your writeup to be posted online, then please let us know at least a week in advance of the final writeup submission deadline.<br>
-
-  <h2>Final Presentation</h2>
-  All project teams will present their work at the end of the semester. We will have one or two poster sessions. Each team should prepare a poster (similar in style to a conference poster) and present it during the allocated time. If applicable, live demonstrations of your software are highly encouraged.
-  <!-- <br>Examples of things to put in your supplementary material:
-  <ul>
-    <li>Source code (if your project proposed an algorithm, or code that is relevant and important for your project.).</li>
-    <li>Cool videos, interactive visualizations, demos, etc.</li>
-  </ul>
-  Examples of things to not put in your supplementary material:
-  <ul>
-    <li>All of Caffe source code.</li>
-    <li>Various ordinary data preprocessing scripts.</li>
-    <li>Any code that is larger than 10MB.</li>
-    <li>Model checkpoints.</li>
-    <li>A computer virus.</li>
-  </ul> -->
+          </div>
 
 
-  <!-- <h2>Example Project Reports</h2>
-  <a href="https://docs.google.com/spreadsheets/d/15OD2rXSUjv2fKLanevtMlaD2NteiFwF1_bv1ziyJ2Xs/edit?usp=sharing">COMPSCI 682 (2017 Fall) projects (only the project titles are available)</a><br>
-  <a href="https://docs.google.com/spreadsheets/d/10rbnBZGXzfDGnTRM8h4Q660ZZ731RSQosZr-RqtlUhU/edit?usp=sharing">COMPSCI 697L (2016 Fall) projects</a><br>
-  <a href="http://vision.stanford.edu/teaching/cs231n/reports.html">Stanford CS231n (2015 Winter) projects</a>.
-  <br> -->
+          <h2>Assignments</h2>
+          <p>
+          Assignments are due just before midnight, at 11:55pm, unless otherwise specified. You will hand in the assignments electronically through <a href="https://gradescope.com/">gradescope</a>.
+          </p>
 
-  <h2>Collaboration Policy</h2>
-  You can work in teams of 2~3 people. We do expect that projects done with 3 people have more impressive writeup and results than 2 person projects.
+          <p>
+          <b>Late day policy</b>
+          <ul>
+          <li><b>Free late days:</b>
+          You can use 7 late days in total, with up to 3 late days for one assignment. Beyond 3 late days the assignment will not be counted at all.
+          Once you have used all 7 late days, penalty is 25% for each additional late day.
+          We will use your latest submission for grading and for calculating your late day usage.
+          There is no bonus if you don't use late days at all.
+          There is no need to ask for permission for late days – we will automatically figure late days based on the latest gradescope submissions. Delay of even a single minute counts as a full late day, so do not wait till the last minute to submit.</li>
+          <li><b>Documented late days:</b> Beyond the seven “free” late days, we will only provide “verified” late days as required by university policy, with documentation (i.e. illness documented by a doctors note).</li>
+          <li><b>Undocumented late days:</b> If you submit your homework late for any reason not covered by the above two policies, you may include at the top of your submission a justification for why it was submitted late. When assigning grades at the end of the semester, the instructor will consider all these justifications and may, at his sole discretion, waive some or all of the penalties applied. The instructor may also waive penalties for submissions that are only very slightly late (e.g. 15 seconds after the deadline). No feedback will be given before the end of the semester about how these decisions will be made. Please make sure to include this in the submission itself and not, e.g., by emailing the instructor.</li>
+          </ul>
+          </p>
+          <p>
+            <b>Re-grading policy:</b> Errors in grading of assignments and exams can occur despite the best efforts of the course staff. If you believe you’ve found a grading error, submit a re-grade request on gradescope. Re-grade requests must be submitted no later than one week after the assignment is returned. Note that re-grading may result in your original grade increasing or decreasing as appropriate.
+          <p>
 
-  <h2>Honor Code</h2>
-  You may consult any papers, books, online references, or publicly available implementations for ideas and code that you may want to incorporate into your strategy or algorithm, so long as you clearly cite your sources in your code and your writeup. However, under no circumstances may you look at another group’s code or incorporate their code into your project.
+          <h2>AUDIT and SAT/UNSAT</h2>
+
+          <p>Audits are not permitted. Students must decide on SAT/UNSAT grading by November 15.</p>
+
+          <p>
+            <b>Rationale:</b> Due to the high demand for seats in this class, our priority is to accommodate students who are committed to earning graded credits. As such, auditing is not allowed. Decisions regarding SAT/UNSAT grading must be communicated to us by November 15, which is expected to be shortly after the release of Assignment 2 grades. Bear in mind that by this deadline, a significant portion of your final grade will still be undetermined. If you foresee challenges dedicating time during the latter half of the course, it might be best to enroll in a different semester. No exceptions will be made.
+          </p>
+
+          <h2>Use of AI is not permitted</h2>
+          <p>
+            This course assumes that all work submitted by students will be generated by the students themselves, working individually or in groups as directed by assignment instructions.
+            Students should not have another person/entity do the writing of any portion of an assignment for them, which includes hiring a person or a company to write assignments and using artificial intelligence tools like ChatGPT and Copilot.
+         </p>
+
+
 
     </div><!--/.container-->
 
