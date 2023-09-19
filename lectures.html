@@ -145,7 +145,7 @@ permalink: /lectures.html
     <td>Lecture</td> <!-- Lecture 4 -->
     <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
-        Backpropagation &amp; Neural Networks I
+        Optimization <br> Stochastic Gradient Descent <br> Backproagation
     </td>
     <td>
         {% if release_day >= cur %}
@@ -169,13 +169,12 @@ permalink: /lectures.html
     <td>Lecture</td> <!-- Lecture 5 -->
     <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
-        Neural Networks II<br>
-        Higher-level representations, image features<br>
-        Vector, Matrix, and Tensor Derivatives
+        Backpropagation <br>
+        Neural Networks I<br>
     </td>
     <td>
       {% if release_day >= cur %}
-        <!--<a href="{{site.baseurl}}/docs/lecture5fall2023.pdf">[slides]</a><br>-->
+        <a href="{{site.baseurl}}/docs/lecture5fall2023.pdf">[slides]</a><br>
         handout 1: <a href="{{site.baseurl}}/docs/vecDerivs.pdf">Vector, Matrix, and Tensor Derivatives</a><br>
         handout 2: <a href="http://cs231n.stanford.edu/handouts/derivatives.pdf">Derivatives, Backpropagation, and Vectorization</a><br>
         <a href="http://www.nature.com/nature/journal/v521/n7553/full/nature14539.html">Deep Learning [Nature]</a> (optional)
@@ -187,9 +186,9 @@ permalink: /lectures.html
     <td>Lecture</td> <!-- Lecture 6 -->
     <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
-        Neural Networks III <br>
-        Training Neural Networks I <br>
-        Activation Functions
+      Neural Networks II<br>
+      Higher-level representations, image features<br>
+      Vector, Matrix, and Tensor Derivatives
     </td>
     <td>
       {% if release_day >= cur %}
