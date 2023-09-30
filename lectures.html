@@ -94,9 +94,9 @@ permalink: /lectures.html
       <th>Event Type</th><th class="footer-col-4">Date</th><th class="footer-col-3">Description</th><th>Course Materials</th>
     </tr>
     <tr>
-      <td>Lecture 1</td> <!-- Lecture 1 -->
+      <td>Lecture</td> <!-- Lecture 1 -->
       <td>{{cur | date: "%A, %b %-d"}}</td>
-      <td>Intro to Deep Learning, historical context.</td>
+      <td>Intro to deep learning, Historical context</td>
       <td>
         {% if release_day >= cur %}
           <a href="https://echo360.org/media/3581977a-e029-4bfb-8ddc-d13d2b311a7e/public">[lecture recording]</a><br>
@@ -115,7 +115,7 @@ permalink: /lectures.html
     </tr> -->
     {% assign cur = 2 | times: 86400 | plus: start %}
     <tr>
-      <td>Lecture 2</td> <!-- Lecture 2 -->
+      <td>Lecture</td> <!-- Lecture 2 -->
       <td>{{ cur | date: "%A, %b %-d"}}</td>
        <td>Image classification and the data-driven approach <br> k-nearest neighbor <br> Linear classification</td>
       <!-- <td>To be announced</td> -->
@@ -130,10 +130,10 @@ permalink: /lectures.html
     </tr>
   {% assign cur = 7 | times: 86400 | plus: start %}
   <tr>
-    <td>Lecture 3</td> <!-- Lecture 3 -->
+    <td>Lecture</td> <!-- Lecture 3 -->
     <td>{{ cur | date: "%A, %b %-d"}}</td>
     <!-- <td>To be announced</td> -->
-    <td>Loss Functions <br> Optimization</td>
+    <td>Loss functions <br> Optimization</td>
     <td>
       {% if release_day >= cur %}
         <a href="https://echo360.org/media/5dd58145-6298-4e1d-963c-208177451eec/public">[lecture recording]</a><br>
@@ -143,10 +143,12 @@ permalink: /lectures.html
   </tr>
   {% assign cur = 9 | times: 86400 | plus: start %}
   <tr>
-    <td>Lecture 4</td> <!-- Lecture 4 -->
+    <td>Lecture</td> <!-- Lecture 4 -->
     <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
-        Optimization <br> Stochastic Gradient Descent <br> Backproagation
+      Optimization <br>
+      Stochastic gradient descent <br>
+      Backproagation
     </td>
     <td>
         {% if release_day >= cur %}
@@ -159,7 +161,7 @@ permalink: /lectures.html
     </td>
   </tr>
   <tr class="success">
-    <td>Optional Discussion</td>
+    <td>Optional discussion</td>
     <td>Friday, Sept. 15</td>
     <td>Python setup, Google collab, Basics of Python and NumPY</td>
     <td>
@@ -167,7 +169,7 @@ permalink: /lectures.html
   </tr>
   {% assign cur = 14 | times: 86400 | plus: start %}
   <tr>
-    <td>Lecture 5</td> <!-- Lecture 5 -->
+    <td>Lecture</td> <!-- Lecture 5 -->
     <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
         Backpropagation<br>
@@ -185,12 +187,12 @@ permalink: /lectures.html
   </tr>
   {% assign cur = 16 | times: 86400 | plus: start %}
   <tr>
-    <td>Lecture 6</td> <!-- Lecture 6 -->
+    <td>Lecture</td> <!-- Lecture 6 -->
     <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
-      Neural Networks<br>
-      Training Neural Networks<br>
-      Activation Functions
+      Neural networks<br>
+      Training neural networks<br>
+      Activation functions
     </td>
     <td>
       {% if release_day >= cur %}
@@ -205,9 +207,9 @@ permalink: /lectures.html
     </td>
   </tr>
   <tr class="success">
-    <td>Optional Discussion</td>
+    <td>Optional discussion</td>
     <td>Friday, Sept. 22</td>
-    <td>Reviewing the chain rule, applying the chain rule to vectors</td>
+    <td>Reviewing the chain rule, Applying the chain rule to vectors</td>
     <td>
       {% if release_day >= cur %}
         <a href="https://docs.google.com/presentation/d/1LpA3EYyTtb9GlqEp1VFqsRQbdwQhG_8m/edit?usp=sharing&ouid=109406443820614506826&rtpof=true&sd=true">[slides]</a>
@@ -216,10 +218,10 @@ permalink: /lectures.html
   </tr>
   {% assign cur = 21 | times: 86400 | plus: start %}
   <tr>
-    <td>Lecture 7</td> <!-- Lecture 7 -->
+    <td>Lecture</td> <!-- Lecture 7 -->
     <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
-        Training Neural Networks II <br>
+        Training neural networks II <br>
         Weight initialization<br>
         Batch normalization
     </td>
@@ -230,17 +232,16 @@ permalink: /lectures.html
 	  recording]</a><br>
 	<a href="{{site.baseurl}}/docs/lecture7fall2023.pdf">[slides]</a><br>
         <a href="notes/neural-networks-2/">[Neural Nets notes 2]</a><br>
-        <a href="https://arxiv.org/abs/1502.03167">[Batch Norm]</a><br>
-        <a href="https://drive.google.com/file/d/0B-0OtUj_Gj7nY0pzQWhoZnVVWDQ/view?usp=sharing">Copula Normalization</a> (optional)
+        <a href="https://arxiv.org/abs/1502.03167">[Batch Norm]</a>
       {% endif %}
     </td>
   </tr>
   {% assign cur = 23 | times: 86400 | plus: start %}
   <tr>
-    <td>Lecture 8</td> <!-- Lecture 8 -->
+    <td>Lecture</td> <!-- Lecture 8 -->
     <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
-        Training Neural Network III <br>
+        Training neural networks III <br>
         Babysitting the learning process<br>
         Hyperparameter optimization
     </td>
@@ -253,21 +254,21 @@ permalink: /lectures.html
     </td>
   </tr>
   <tr class="success">
-    <td>Optional Discussion</td>
+    <td>Optional discussion</td>
     <td>Friday, Sept. 29</td>
     <td>Vector, Matrix, and Tensor Derivatives</td>
     <td>
+      <a href=docs/vector-matrix-tensor-der.pdf>[slides]</a>
     </td>
   </tr>
   {% assign cur = 28 | times: 86400 | plus: start %}
   <tr>
-    <td>Lecture 9</td> <!-- Lecture 9 -->
+    <td>Lecture</td> <!-- Lecture 9 -->
     <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
-      Project Discussion led by TAs<br>
+      Project discussion led by TAs<br>
       Expectations and timeline<br>
       Overview of projects outlined by the TAs<br>
-      (Many course staff are attending ICCV)
     </td>
     <td>
       {% if release_day >= cur %}
@@ -279,16 +280,13 @@ permalink: /lectures.html
   </tr>
   {% assign cur = 30 | times: 86400 | plus: start %}
   <tr>
-    <td>Lecture 10</td> <!-- Lecture 10 -->
+    <td></td> <!-- Lecture 10 -->
     <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
-        Training Neural Network IV: <br>
-        Model ensembles<br>
-	Dropout
+      Instructors at ICCV, no class
     </td>
     <td>
       {% if release_day >= cur %}
-        <!--<a href="https://docs.google.com/presentation/d/1mGJ9E6K2zhvM0m94hxtq_PqjTlErUxEi8j5Mm-aBug0/edit?usp=sharing">[slides]</a><br>-->
       {% endif %}
     </td>
   </tr>
@@ -307,10 +305,12 @@ permalink: /lectures.html
   </tr>
   {% assign cur = 37 | times: 86400 | plus: start %}
   <tr>
-    <td>Lecture 11</td>  <!-- Lecture 11 -->
+    <td>Lecture</td>  <!-- Lecture 11 -->
     <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
-        Convolutional Neural Networks
+      Training neural networks IV<br>
+      Model ensembles, dropout<br>
+      Convolutional Neural Networks
     </td>
     <td>
       {% if release_day >= cur %}
@@ -319,7 +319,7 @@ permalink: /lectures.html
     </td>
   </tr>
   <tr class="success">
-    <td>Optional Discussion</td>
+    <td>Optional discussion</td>
     <td>Friday, Oct. 13</td>
     <td>Batch normalization</td>
     <td>
@@ -327,7 +327,7 @@ permalink: /lectures.html
   </tr>
   {% assign cur = 42 | times: 86400 | plus: start %}
   <tr>
-    <td>Lecture 12</td>
+    <td>Lecture</td>
     <td>{{ cur | date: "%A, %b %-d"}}</td>  <!-- Lecture 12 -->
     <td>
       ConvNets for spatial localization<br>
@@ -346,7 +346,7 @@ permalink: /lectures.html
   </tr>
   {% assign cur = 44 | times: 86400 | plus: start %}
   <tr>
-    <td>Lecture 13</td>
+    <td>Lecture</td>
     <td>{{ cur | date: "%A, %b %-d"}}</td>  <!-- Lecture 13 -->
     <td>
       ConvNets for spatial localization<br>
@@ -359,7 +359,7 @@ permalink: /lectures.html
   </tr>
   {% assign cur = 49 | times: 86400 | plus: start %}
   <tr>
-    <td>Lecture 14</td>
+    <td>Lecture</td>
     <td>{{ cur | date: "%A, %b %-d"}}</td>  <!-- Lecture 14 -->
     <td>
       Understanding and visualizing Convolutional Neural Networks
@@ -380,7 +380,7 @@ permalink: /lectures.html
   </tr> -->
   {% assign cur = 51 | times: 86400 | plus: start %}
   <tr>
-    <td>Lecture 15</td>
+    <td>Lecture</td>
     <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
       Backprop into image: Visualizations, deep dream
@@ -392,7 +392,7 @@ permalink: /lectures.html
   </tr>
   {% assign cur = 56 | times: 86400 | plus: start %}
   <tr>
-    <td>Lecture 16</td>
+    <td>Lecture</td>
     <td>{{ cur | date: "%A, %b %-d"}}</td> <!-- Lecture 15/16 -->
     <td>
       Neural Texture Synthesis and Style Transfer
@@ -449,7 +449,7 @@ permalink: /lectures.html
     </td>
   </tr>
   <tr class="success">
-    <td>Optional Discussion</td>
+    <td>Optional discussion</td>
     <td>Friday, Nov. 10</td>
     <td>Getting started with Project and Milestone Expectations</td>
     <td>
