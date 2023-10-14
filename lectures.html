@@ -364,7 +364,7 @@ permalink: /lectures.html
     <td>Lecture</td>
     <td>{{ cur | date: "%A, %b %-d"}}</td>  <!-- Lecture 14 -->
     <td>
-      Understanding and visualizing Convolutional Neural Networks
+      Understanding and visualizing ConvNets
     </td>
     <td>
       {% if release_day >= cur %}
@@ -450,13 +450,6 @@ permalink: /lectures.html
       {% endif %}
     </td>
   </tr>
-  <tr class="success">
-    <td>Optional discussion</td>
-    <td>Friday, Nov. 10</td>
-    <td>Getting started with Project and Milestone Expectations</td>
-    <td>
-    </td>
-  </tr>
   {% assign cur = 70 | times: 86400 | plus: start %}
   <tr>
     <td>Lecture</td>
@@ -468,7 +461,7 @@ permalink: /lectures.html
   </tr>
   {% assign cur = 72 | times: 86400 | plus: start %}
   <tr class="danger">
-    <td>Lecture</td>
+    <td>Midterm</td>
     <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
       Midterm to be held during regular lecture time
@@ -478,7 +471,7 @@ permalink: /lectures.html
   </tr>
   {% assign cur = 77 | times: 86400 | plus: start %}
   <tr>
-    <td>Mid-Term</td>
+    <td>Lecture</td>
     <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>Generative AI</td>
     <td></td>
