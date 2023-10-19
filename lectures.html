@@ -350,11 +350,12 @@ permalink: /lectures.html
     <td>Lecture</td>
     <td>{{ cur | date: "%A, %b %-d"}}</td>  <!-- Lecture 13 -->
     <td>
-      ConvNets for spatial localization<br>
-      Object detection, image segmentation
+      ConvNets for spatial localization I<br>
+      Object detection<br>
     </td>
     <td>
       {% if release_day >= cur %}
+        <a href="https://echo360.org/media/4ddaf61b-2987-4569-8349-e560e56e6538/public">[lecture recording]</a>
       {% endif %}
     </td>
   </tr>
@@ -363,7 +364,8 @@ permalink: /lectures.html
     <td>Lecture</td>
     <td>{{ cur | date: "%A, %b %-d"}}</td>  <!-- Lecture 14 -->
     <td>
-      Understanding and visualizing ConvNets
+      ConvNets for spatial localization II<br>
+      Image Segmentation<br>
     </td>
     <td>
       {% if release_day >= cur %}
@@ -437,7 +439,7 @@ permalink: /lectures.html
     <td>Lecture</td>
     <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
-      Embodied AI
+      Generative AI
     </td>
     <td>
       {% if release_day >= cur %}
@@ -467,7 +469,7 @@ permalink: /lectures.html
   <tr>
     <td>Lecture</td>
     <td>{{ cur | date: "%A, %b %-d"}}</td>
-    <td>Generative AI</td>
+    <td>Embodied AI</td>
     <td></td>
   </tr>
   {% assign cur = 79 | times: 86400 | plus: start %}
