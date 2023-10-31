@@ -1,7 +1,7 @@
 ---
 layout: page
 mathjax: true
-permalink: /assignments/assignments2023/assignment3hidden/
+permalink: /assignments/assignments2023/assignment3/
 ---
 
 **This assignment is due on Sunday, November 21 at 11:55pm EST.**
