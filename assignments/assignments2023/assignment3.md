@@ -6,7 +6,7 @@ permalink: /assignments/assignments2023/assignment3hidden/
 
 **This assignment is due on Sunday, November 21 at 11:55pm EST.**
 
-Starter code containing Colab notebooks can be downloaded [here](https://raw.githubusercontent.com/compsci682-fa21/compsci682-fa21.github.io/master/assignments/assignments2023/assignment3.zip). Please note that you can finish the homework either using Google Colab or on your local machine.
+Starter code containing Colab notebooks can be downloaded [here](https://raw.githubusercontent.com/compsci682-fa21/compsci682-fa21.github.io/master/assignments/assignments2023/assignment3_2023.zip). Please note that you can finish the homework either using Google Colab or on your local machine.
 
 - [Setup](#setup)
 - [Goals](#goals)
