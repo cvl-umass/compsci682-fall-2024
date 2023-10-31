@@ -407,6 +407,7 @@ permalink: /lectures.html
     <td>
       {% if release_day >= cur %}
       {% endif %}
+      <a href="{{site.baseurl}}/docs/lecture15fall2023.pdf">[slides]</a><br>
       </td>
   </tr>
   {% assign cur = 58 | times: 86400 | plus: start %}
@@ -414,11 +415,13 @@ permalink: /lectures.html
     <td>Lecture</td>
     <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
-      <i>James Tompkin, MLFL</i>
+      <i>Guest lecture: James Tompkin, MLFL (12-1pm, CS 150)</i><br>
+      More Cameras and Better Cameras for Scene Reconstruction
     </td>
     <td>
       {% if release_day >= cur %}
       {% endif %}
+      <a href="https://www.cics.umass.edu/event/20231102/mlfl-james-tompkin-brown-university">[talk info]</a>
       </td>
   </tr>
   {% assign cur = 63 | times: 86400 | plus: start %}
@@ -426,7 +429,9 @@ permalink: /lectures.html
     <td>Lecture</td>
     <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
-      Neuro Symbolic AI
+      <i>Guest lecture: Sajjad Amini<i><br>
+	  Generative modeling<br>
+	  Autoregressive, Variational, GANs, FLOW, Diffusion
     </td>
     <td>
       {% if release_day >= cur %}
@@ -438,7 +443,7 @@ permalink: /lectures.html
     <td>Lecture</td>
     <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
-      Generative AI
+      Recurrent neural networks and transformers
     </td>
     <td>
       {% if release_day >= cur %}
@@ -450,7 +455,7 @@ permalink: /lectures.html
     <td>Lecture</td>
     <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
-      Midterm Review
+      Midterm Review led by TAs
     </td>
     <td></td>
   </tr>
@@ -500,7 +505,7 @@ permalink: /lectures.html
     <td>Lecture</td>
     <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
-      <i>Sara Beery, MLFL</i>
+      <i>Guest lecture: Sara Beery, MLFL (12-1pm, CS150)</i>
     </td>
     <td>
     </td>
