@@ -432,11 +432,13 @@ permalink: /lectures.html
     <td>
       <i>Guest lecture:</i> Sajjad Amini<br>
 	  Generative modeling<br>
-	  Autoregressive, Variational, GANs, FLOW, Diffusion
+	  Autoregressive, Variational, GANs
     </td>
     <td>
       {% if release_day >= cur %}
       {% endif %}
+      <a href="https://echo360.org/media/addcfeae-5ca7-4432-b784-d214e302bac5/public">[lecture recording]</a><br>
+      <a href="{{site.baseurl}}/docs/presentation_DGM_sajjad.pdf">[slides]</a><br>
       </td>
   </tr>
   {% assign cur = 65| times: 86400 | plus: start %}
