@@ -17,7 +17,7 @@ Generative Adversarial Networks (GANs) adopt a game-theoretical framework, diffe
 ### How it works
 
 <div class="fig figcenter fighighlight">
-  <img src="{{site.baseurl}}/assets/gan/gan_main.png" width="70%">
+  <img src="{{site.baseurl}}/assets/gan/gan_main.png" width="80%">
 </div>
 
 As you can identify from their names, a generator is used to generate real-looking images and the discriminator’s job is to identify which one is a fake. The entities/adversaries are in constant battle as one(generator) tries to fool the other(discriminator), while the other tries not to be fooled. To generate the best images you will need a very good generator and a discriminator. This is because if your generator is not good enough, it will never be able to fool the discriminator and the model will never converge. If the discriminator is bad, then images which make no sense will also be classified as real and hence your model never trains and in turn you never produces the desired output. The input, random noise can be a Gaussian distribution and values can be sampled from this distribution and fed into the generator network and an image is generated. This generated image is compared with a real image by the discriminator and it tries to identify if the given image is fake or real.
@@ -25,7 +25,7 @@ As you can identify from their names, a generator is used to generate real-looki
 ### Objective Function
 
 <div class="fig figcenter fighighlight">
-  <img src="{{site.baseurl}}/assets/gan/objective1.png" width="70%">
+  <img src="{{site.baseurl}}/assets/gan/objective1.png" width="80%">
   <div class="figcaption">
     Minimax objective function
   </div>
@@ -61,12 +61,13 @@ Instead of minimizing the likelihood of discriminator being correct, we maximize
 
 ### Disadvantages
 1. GANs are more unstable to train because you have to train two networks from a single backpropagation. Therefore choosing the right objectives can make a big difference.
-2. We cannot perform any inference queries with GANs
+2. Resource Intensive
+3. Evaluating the performance of GANs is not straightforward. Unlike other machine learning models, where metrics like accuracy or precision can be used, assessing the quality of generated data is more subjective.
 
 
 <a name='add'></a>
 
-##References
+## References
 
 - [Generative Adversarial Networks](https://arxiv.org/abs/1406.2661)
 - [CS 231n Slides](http://cs231n.stanford.edu/slides/2017/cs231n_2017_lecture13.pdf)
