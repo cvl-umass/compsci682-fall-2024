@@ -17,7 +17,7 @@ Generative Adversarial Networks (GANs) adopt a game-theoretical framework, diffe
 ### How it works
 
 <div class="fig figcenter fighighlight">
-  <img src="{{site.baseurl}}/assets/gan/gan_main.png" width="50%">
+  <img src="{{site.baseurl}}/assets/gan/gan_main.png" width="70%">
 </div>
 
 As you can identify from their names, a generator is used to generate real-looking images and the discriminator’s job is to identify which one is a fake. The entities/adversaries are in constant battle as one(generator) tries to fool the other(discriminator), while the other tries not to be fooled. To generate the best images you will need a very good generator and a discriminator. This is because if your generator is not good enough, it will never be able to fool the discriminator and the model will never converge. If the discriminator is bad, then images which make no sense will also be classified as real and hence your model never trains and in turn you never produces the desired output. The input, random noise can be a Gaussian distribution and values can be sampled from this distribution and fed into the generator network and an image is generated. This generated image is compared with a real image by the discriminator and it tries to identify if the given image is fake or real.
@@ -25,7 +25,7 @@ As you can identify from their names, a generator is used to generate real-looki
 ### Objective Function
 
 <div class="fig figcenter fighighlight">
-  <img src="{{site.baseurl}}/assets/gan/objective1.png" width="50%">
+  <img src="{{site.baseurl}}/assets/gan/objective1.png" width="70%">
   <div class="figcaption">
     Minimax objective function
   </div>
@@ -34,7 +34,7 @@ As you can identify from their names, a generator is used to generate real-looki
 Since a game-theoretic approach is taken, our objective function is represented as a minimax function. The discriminator tries to maximize the objective function, therefore we can perform gradient ascent on the objective function. The generator tries to minimize the objective function, therefore we can perform gradient descent on the objective function. By alternating between gradient ascent and descent, the network can be trained.
 
 <div class="fig figcenter fighighlight">
-  <img src="{{site.baseurl}}/assets/gan/gradientascent.png" width="50%">
+  <img src="{{site.baseurl}}/assets/gan/gradientascent.png" width="70%">
   <div class="figcaption">
     Gradient Ascent on Discriminator
   </div>
@@ -64,7 +64,7 @@ Instead of minimizing the likelihood of discriminator being correct, we maximize
 2. We cannot perform any inference queries with GANs
 
 
-<a name='tf'></a>
+<a name='add'></a>
 
 ##References
 
