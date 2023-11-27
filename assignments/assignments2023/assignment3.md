@@ -53,10 +53,10 @@ The goals of this assignment are as follows:
 The notebook ``Transformer_Captioning.ipynb`` will walk you through the implementation of a Transformer model and apply it to image captioning on COCO.
 
 ## Q2: Generative Adversarial Networks (15 points)
-In the Jupyter notebooks ``GANS-TensorFlow.ipynb``/``GANS-PyTorch.ipynb`` you will learn how to generate images that match a training dataset, and use these models to improve classifier performance when training on a large amount of unlabeled data and a small amount of labeled data. Please complete only one of the notebooks (TensorFlow or PyTorch). No extra credit will be awarded if you complete both notebooks.
+In the Jupyter notebook ``Generative_Adversarial_Networks.ipynb`` you will learn how to generate images that match a training dataset, and use these models to improve classifier performance when training on a large amount of unlabeled data and a small amount of labeled data.
 
 ## Q3: Style Transfer (10 points)
-In the Jupyter notebooks ``StyleTransfer-TensorFlow.ipynb``/``StyleTransfer-PyTorch.ipynb`` you will learn how to create images with the content of one image but the style of another. Please complete only one of the notebooks (TensorFlow or PyTorch). No extra credit will be awardeded if you complete both notebooks.
+In the Jupyter notebook ``StyleTransfer.ipynb`` you will learn how to create images with the content of one image but the style of another. 
 
 ## Submitting your work:
 **Important**. Please make sure that the submitted notebooks have been run and the cell outputs are visible.
@@ -71,4 +71,4 @@ To make sure everything is working properly, **remember to do a clean run ("Kern
 
 **3.** Please submit <UmassID>.zip and the pdf to Gradescope.
 
-If you run code on your local machine on Linux or macOS,  you can run the provided `collectSubmission.sh` script from `assignment1/` to produce a file `<UmassID>.zip`.
+If you run code on your local machine on Linux or macOS,  you can run the provided `collectSubmission.sh` script from `assignment3/` to produce a file `<UmassID>.zip`.
