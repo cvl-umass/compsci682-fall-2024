@@ -84,7 +84,7 @@ permalink: /lectures.html
         </div>
       </div>
         <div class="panel panel-default">
-{% assign start = '03-09-2023 10:00:00' | date: '%s' %}
+{% assign start = '03-09-2024 10:00:00' | date: '%s' %}
 {% assign delta = 2 | times: 86400 %}
 {% assign release_day = site.time | date: '%s' | plus: delta %}
 {% assign cur = 0 | times: 86400 | plus: start %}
@@ -99,8 +99,8 @@ permalink: /lectures.html
       <td>Intro to deep learning, Historical context</td>
       <td>
         {% if release_day >= cur %}
-          <!-- <a href="https://echo360.org/media/3581977a-e029-4bfb-8ddc-d13d2b311a7e/public">[lecture recording]</a><br> 
-          <a href="{{site.baseurl}}/docs/lecture1fall2023.pdf">[slides]</a><br>
+          <a href="https://cvl-umass.github.io/compsci682-fall-2024/lectures.html">[lecture recording]</a><br> 
+          <a href="https://cvl-umass.github.io/compsci682-fall-2024/lectures.html">[slides]</a><br>
           <a href="notes/python-numpy-tutorial/">[python/numpy tutorial]</a><br>
 	  <a href="{{site.baseurl}}/setup-instructions/">[software setup for assignments]</a><br> -->
         {% endif %}
@@ -153,7 +153,7 @@ permalink: /lectures.html
   </tr>
   <tr class="success">
     <td>Optional discussion</td>
-    <!--<td>Friday, Sept. 15</td>-->
+    <td> (TBD) </td>
     <td>Python setup, Google collab, Basics of Python and NumPY</td>
     <td>
     </td>
@@ -200,7 +200,7 @@ permalink: /lectures.html
   </tr>
   <tr class="success">
     <td>Optional discussion</td>
-    <!--<td>Friday, Sept. 22</td>-->
+    <td> (TBD) </td>
     <td>Reviewing the chain rule, Applying the chain rule to vectors</td>
     <td>
       {% if release_day >= cur %}
@@ -247,7 +247,7 @@ permalink: /lectures.html
   </tr>
   <tr class="success">
     <td>Optional discussion</td>
-    <!--<td>Friday, Sept. 29</td>-->
+    <td> (TBD) </td>
     <td>Vector, Matrix, and Tensor Derivatives</td>
     <td>
       <!--<a href=docs/vector-matrix-tensor-der.pdf>[slides]</a>-->
@@ -273,7 +273,7 @@ permalink: /lectures.html
   </tr>
   {% assign cur = 30 | times: 86400 | plus: start %}
   <tr>
-    <td></td> <!-- Lecture 10 -->
+    <td>Lecture</td> <!-- Lecture 10 -->
     <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
       Training Neural networks<br>
@@ -286,8 +286,8 @@ permalink: /lectures.html
     </td>
   </tr>
   {% assign cur = 35 | times: 86400 | plus: start %}
-  <tr class="active">
-    <td></td>
+  <tr>
+    <td>Lecture</td>
     <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
       Convnets for spatial localization I<br>
@@ -316,18 +316,18 @@ permalink: /lectures.html
   </tr>
   <tr class="success">
     <td>Optional discussion</td>
-    <!--<td>Friday, Oct. 13</td>-->
+    <td> (TBD) </td>
     <td>Batch normalization</td>
     <td>
        <!--<a href="https://docs.google.com/presentation/d/1j2dPO6kzY6kxpZxslLY5s4mHmg_zkRi__uJh5TygBhM/edit?usp=sharing">[slides]</a><br>-->
     </td>
   </tr>
   {% assign cur = 42 | times: 86400 | plus: start %}
-  <tr>
-    <td>Lecture</td>
+  <tr class="active">
+    <td></td>
     <td>{{ cur | date: "%A, %b %-d"}}</td>  <!-- Lecture 12 -->
     <td>
-      No Class, monday Schedule<br>
+      No Class, Monday Schedule<br>
     </td>
     <td>
       {% if release_day >= cur %}
@@ -413,8 +413,8 @@ permalink: /lectures.html
       </td>
   </tr>
   {% assign cur = 63 | times: 86400 | plus: start %}
-  <tr>
-    <td>Lecture</td>
+  <tr class="active">
+    <td></td>
     <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
       No class, Election Day <br>
@@ -474,7 +474,7 @@ permalink: /lectures.html
     </td>
   </tr>
   {% assign cur = 79 | times: 86400 | plus: start %}
-  <tr class="active">
+  <tr>
     <td>Lecture</td>
     <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
@@ -500,8 +500,8 @@ permalink: /lectures.html
     </td>
   </tr>
   {% assign cur = 86 | times: 86400 | plus: start %}
-  <tr>
-    <td>Lecture</td>
+  <tr class="active">
+    <td></td>
     <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
       No Class, Thanksgiving Break
@@ -510,7 +510,7 @@ permalink: /lectures.html
     </td>
   </tr>
   {% assign cur = 91 | times: 86400 | plus: start %}
-  <tr>
+  <tr class="danger">
     <td>Project Presentation</td>
     <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
@@ -524,7 +524,7 @@ permalink: /lectures.html
     </td>
   </tr>
   {% assign cur = 93 | times: 86400 | plus: start %}
-  <tr>
+  <tr class="danger">
     <td>Project Presentation</td>
     <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
@@ -538,7 +538,7 @@ permalink: /lectures.html
     </td>
   </tr>
   {% assign cur = 93 | times: 86400 | plus: start %}
-  <tr>
+  <tr class="danger">
     <td>Project Presentation</td>
     <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
