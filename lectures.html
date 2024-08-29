@@ -432,7 +432,7 @@ permalink: /lectures.html
     <td>Lecture</td>
     <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
-      Recurrent neural networks
+      Recurrent Neural Networks
     </td>
     <td>
       {% if release_day >= cur %}
@@ -446,7 +446,7 @@ permalink: /lectures.html
     <td>Lecture</td>
     <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
-      Midterm review
+      Transformers
     </td>
     <td>
       <!--<a href="https://echo360.org/media/eb9d4cef-f36a-4328-80ab-8da583265544/public">[lecture recording]</a><br>
@@ -454,11 +454,11 @@ permalink: /lectures.html
     </td>
   </tr>
   {% assign cur = 72 | times: 86400 | plus: start %}
-  <tr class="danger">
-    <td>Midterm</td>
+  <tr>
+    <td>Lecture</td>
     <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
-      Midterm to be held during regular lecture time
+      (TBD)
     </td>
     <td>
     </td>
@@ -467,7 +467,7 @@ permalink: /lectures.html
   <tr>
     <td>Lecture</td>
     <td>{{ cur | date: "%A, %b %-d"}}</td>
-    <td>Transformers</td>
+    <td>(TBD)</td>
     <td>
       <!--<a href="https://echo360.org/media/15c08c9b-52a5-4e48-8196-d99d32b6d9c6/public">[lecture recording]</a><br>
       <a href="{{site.baseurl}}/docs/lecture17fall2023.pdf">[slides]</a><br>-->
@@ -478,7 +478,7 @@ permalink: /lectures.html
     <td>Lecture</td>
     <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
-      Thanksgiving, no class
+      (TBD)
     </td>
     <td>
       {% if release_day >= cur %}
@@ -490,7 +490,7 @@ permalink: /lectures.html
     <td>Lecture</td>
     <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
-      Multi-modal AI
+      (TBD)
     </td>
     <td>
       {% if release_day >= cur %}
@@ -500,22 +500,21 @@ permalink: /lectures.html
     </td>
   </tr>
   {% assign cur = 86 | times: 86400 | plus: start %}
-  <!--<tr>
-    <td>Lecture</td>
-    <td>{{ cur | date: "%A, %b %-d"}}</td>
-    <td>
-      Guest lecture: <a href="https://beerys.github.io/">Sara Beery</a>, MLFL (12-1pm, CS150)<br>
-      Monitoring the Urban Forest with Auto Arborist
-    </td>
-    <td>
-    </td>
-  </tr>-->
-  {% assign cur = 91 | times: 86400 | plus: start %}
   <tr>
     <td>Lecture</td>
     <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
-      Neuro-Symbolic AI
+      No Class, Thanksgiving Break
+    </td>
+    <td>
+    </td>
+  </tr>
+  {% assign cur = 91 | times: 86400 | plus: start %}
+  <tr>
+    <td>Project Presentation</td>
+    <td>{{ cur | date: "%A, %b %-d"}}</td>
+    <td>
+      Group 1
     </td>
     <td>
       {% if release_day >= cur %}
@@ -526,10 +525,10 @@ permalink: /lectures.html
   </tr>
   {% assign cur = 93 | times: 86400 | plus: start %}
   <tr>
-    <td>Lecture</td>
+    <td>Project Presentation</td>
     <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
-      Self-Supervised Learning
+      Group 2
     </td>
     <td>
       {% if release_day >= cur %}
@@ -538,6 +537,19 @@ permalink: /lectures.html
       <a href="{{site.baseurl}}/docs/lecture20fall2023.pdf">[slides]</a><br>-->
     </td>
   </tr>
+  {% assign cur = 93 | times: 86400 | plus: start %}
+  <tr>
+    <td>Project Presentation</td>
+    <td>{{ cur | date: "%A, %b %-d"}}</td>
+    <td>
+      Group 3
+    </td>
+    <td>
+      {% if release_day >= cur %}
+      {% endif %}
+    </td>
+  </tr>
+
 </tbody></table>
 </div>
 
