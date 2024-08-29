@@ -124,7 +124,7 @@ description: Index page
                     <div class="instructorphoto"><img src="assets/fig/subhransu.png"></div>
                     <div>Prof. Subhransu Maji</div>
                   </a>
-                  <div>Office Hour: Mon 11-12AM, CS274</div>
+                  <div>Office Hour: Wed 3-4pm, CS274</div>
                   <!-- <font color="red"> Erik's office hours this week will be at 1-2pm(3/8 Fri).</font> -->
                 </div>
                 <div class="instructor2">
@@ -132,7 +132,7 @@ description: Index page
                     <div class="instructorphoto"><img src="assets/fig/chuang.jpeg"></div>
                     <div>Prof. Chuang Gan</div>
                   </a>
-                  <div>Office Hour: Wed 1:30-2:30PM, <a href="https://cvl-umass.github.io/compsci682-fall-2024/">Zoom</a></div>
+                  <div>Office Hour: Fri 9-10am, <a href="https://piazza.com/class/llv9p5nf1py4ab/post/11">Zoom</a></div>
                   <!-- <font color="red"> Erik's office hours this week will be at 1-2pm(3/8 Fri).</font> -->
                 </div>
               </div>
@@ -144,15 +144,15 @@ description: Index page
                     <div class="instructorphoto"><img src="assets/fig/oindrila.png"></div>
                     <div>Oindrila Saha</div>
                   </a>
-                  <div>TA Hours: Tue 9-11AM, CS207</div>
+                  <div>TA Hours: Mon/Wed 1-2pm, Mon <a href="https://piazza.com/class/llv9p5nf1py4ab/post/11">Zoom</a>, Wed CS207</div>
                 </div>
                 </br>
                 <div class="instructor2">
-                  <a href="https://xhrlyb.github.io/">
-                    <div class="instructorphoto"><img src="assets/fig/chunru.jpg"></div>
-                    <div>Chunru Lin</div>
+                  <a href="https://johnmaxh.github.io/">
+                    <div class="instructorphoto"><img src="assets/fig/max.png"></div>
+                    <div>Max Hamilton</div>
                   </a>
-                  <div>TA Hours: Wed 1:30-3:30PM, LGRT T222</div>
+                  <div>TA Hours: Mon/Wed 2-3pm, CS207</div>
                 </div>
                 </br>
                 <div class="instructor2">
@@ -160,7 +160,7 @@ description: Index page
                   <div class="instructorphoto"><img src="assets/fig/junyan.jpg"></div>
                   <div>Junyan	Li</div>
                 </a>
-                <div>TA Hours: Wed 9-11AM, LGRT T222</div>
+                <div>TA Hours: Wed/Fri 10-11am, LGRT T222</div>
                 </div>
                 </br>
                 <div class="instructor2">
@@ -168,15 +168,23 @@ description: Index page
                   <div class="instructorphoto"><img src="assets/fig/ashish.png"></div>
                   <div>Ashish Singh</div>
                 </a>
-                <!-- <div>TA Hours: Thur/Fri 4-5pm, CS207</div> -->
+                <div>TA Hours: Thur/Fri 4-5pm, CS207</div>
                 </div>
                 </br>
                 <div class="instructor2">
-                <a href="https://bmetevier.github.io/">
-                  <div class="instructorphoto"><img src="assets/fig/blossom.png"></div>
+                <a href="https://people.cs.umass.edu/~edmondcunnin">
+                  <div class="instructorphoto"><img src="assets/fig/eddie.png"></div>
                   <div>Eddie Cunningham</div>
                 </a>
-                <div>TA Hours: Mon 10-12AM, <a href="https://cvl-umass.github.io/compsci682-fall-2024/">Zoom</a></div>
+                <div>TA Hours: Tue/Thur 9-10am, Tue <a href="https://piazza.com/class/llv9p5nf1py4ab/post/11">Zoom</a>, Thur CS207</div>
+                </div>
+                </br>
+                <div class="instructor2">
+                  <a href="https://people.cs.umass.edu/~kexiao/">
+                    <div class="instructorphoto"><img src="assets/fig/ke.jpg"></div>
+                    <div>Ke Xiao</div>
+                  </a>
+                  <div>TA Hours: Tue/Fri 11am-12pm, <a href="https://piazza.com/class/llv9p5nf1py4ab/post/11">Zoom</a></div>
                 </div>
             </div>
           </div>
@@ -193,8 +201,8 @@ description: Index page
             </div><!--/.col-xs-6.col-lg-4-->
             <div class="col-xs-6 col-lg-4">
               <h2>Optional Discussions</h2>
-              <!-- Fri 9:00-10:00 am<br>
-              CS 142 </p> -->
+              Fri 9:00-10:00 am<br>
+              CS 142 </p>
               <!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
             </div><!--/.col-xs-6.col-lg-4-->
             <div class="col-xs-6 col-lg-4">
