@@ -1,7 +1,7 @@
 ---
 layout: page
 mathjax: true
-permalink: /assignments/assignments2023/assignment1/
+permalink: /assignments/assignments2024/assignment1/
 ---
 
 Get the code as a zip file [here](https://github.com/cvl-umass/compsci682-fall-2023/raw/main/assignments/assignments2023/assignment1.zip). 
