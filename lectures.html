@@ -98,7 +98,7 @@ permalink: /lectures.html
     <tr>
       <td>Lecture</td> <!-- Lecture 1 -->
       <td>{{cur | date: "%A, %b %-d"}}</td>
-      <td>Intro to deep learning, Historical context</td>
+      <td>Course logistics and overview<br>Historical context</td>
       <td>
         {% if release_day >= cur %}
           <a href="docs/lecture1fall2024.pdf">[slides]</a><br>
@@ -111,7 +111,9 @@ permalink: /lectures.html
     <tr>
       <td>Lecture</td> <!-- Lecture 2 -->
       <td>{{ cur | date: "%A, %b %-d"}}</td>
-       <td>Image classification <br> K-nearest neighbor <br> Linear classification <br> Loss function I</td>
+       <td>Image classification and the data-driven approach <br> K-nearest neighbor
+         <br> Linear classification
+         <br> Loss function</td>
       <td>
         {% if release_day >= cur %}
           <a href="{{site.baseurl}}/docs/lecture2fall2024.pdf">[slides]</a><br>
@@ -125,7 +127,7 @@ permalink: /lectures.html
     <td>Lecture</td> <!-- Lecture 3 -->
     <td>{{ cur | date: "%A, %b %-d"}}</td>
     <!-- <td>To be announced</td> -->
-    <td>Loss function II <br> Regularization <br> Optimization</td>
+    <td>Loss function<br> Regularization <br> Optimization</td>
     <td>
       {% if release_day >= cur %}
       <a href="{{site.baseurl}}/docs/lecture3fall2024.pdf">[slides]</a><br>
@@ -137,21 +139,20 @@ permalink: /lectures.html
     <td>Lecture</td> <!-- Lecture 4 -->
     <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
-      Backpropagation <br> Neural Networks I<br>
+      Optimization <br> Stochastic gradient descent<br>
+      Momentum, AdaGrad, Adam<br>
+      Learning rate schedules<br>
     </td>
     <td>
-        {% if release_day >= cur %}
-        <!--<a href="https://echo360.org/media/b4c492aa-5c9c-4840-9aea-fc354cfbdc8d/public">[lecture recording]</a><br>
-        <a href="{{site.baseurl}}/docs/lecture4fall2023.pdf">[slides]</a><br>
-        <a href="notes/optimization-2/">[backprop notes]</a><br>
-        <a href="http://yann.lecun.com/exdb/publis/pdf/lecun-98b.pdf">[Efficient BackProp]</a> (optional)<br>
-	related: <a href="http://colah.github.io/posts/2015-08-Backprop/">[1]</a>, <a href="http://neuralnetworksanddeeplearning.com/chap2.html">[2]</a>, <a href="https://www.youtube.com/watch?v=q0pm3BrIUFo">[3]</a> (optional) -->
+      {% if release_day >= cur %}
+        <a href="{{site.baseurl}}/docs/lecture4fall2024.pdf">[slides]</a><br>
+        <a href="notes/optimization-1/">[optimization and sgd notes]</a><br>
       {% endif %}
     </td>
   </tr>
   <tr class="success">
     <td>Optional discussion</td>
-    <td> Friday, Sep 13, 11-12pm, CS 142 </td>
+    <td>Friday, Sep 13, 11-12pm, CS 142 </td>
     <td>Python setup, Google collab, Basics of Python and Numpy</td>
     <td>
     </td>
@@ -161,13 +162,16 @@ permalink: /lectures.html
     <td>Lecture</td> <!-- Lecture 5 -->
     <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
-        Neural Networks II<br>
-        Vector, Matrix, and Tensor Derivatives<br>
-	Image Features<br>
+        Neural networks<br>
+        Backpropagation<br>
+        Vector, matrix, and tensor derivatives<br>
     </td>
     <td>
       {% if release_day >= cur %}
         <!--<a href="https://echo360.org/media/412c3612-6abb-4e53-a730-ee63a375686e/public">[lecture recording]</a><br>
+        <a href="notes/optimization-2/">[backprop notes]</a><br>
+        <a href="http://yann.lecun.com/exdb/publis/pdf/lecun-98b.pdf">[Efficient BackProp]</a> (optional)<br>
+	related: <a href="http://colah.github.io/posts/2015-08-Backprop/">[1]</a>, <a href="http://neuralnetworksanddeeplearning.com/chap2.html">[2]</a>, <a href="https://www.youtube.com/watch?v=q0pm3BrIUFo">[3]</a> (optional)
         <a href="{{site.baseurl}}/docs/lecture5fall2023.pdf">[slides]</a><br>
         handout 1: <a href="{{site.baseurl}}/docs/vecDerivs.pdf">Vector, Matrix, and Tensor Derivatives</a><br>
         handout 2: <a href="http://cs231n.stanford.edu/handouts/derivatives.pdf">Derivatives, Backpropagation, and Vectorization</a><br>
@@ -180,8 +184,8 @@ permalink: /lectures.html
     <td>Lecture</td> <!-- Lecture 6 -->
     <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
-      Neural networks III<br>
-      Training neural networks I<br>
+      Neural networks<br>
+      Training neural networks<br>
       Activation functions
     </td>
     <td>
@@ -211,7 +215,7 @@ permalink: /lectures.html
     <td>Lecture</td> <!-- Lecture 7 -->
     <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
-        Training neural networks II <br>
+        Training neural networks<br>
         Weight initialization<br>
         Batch normalization
     </td>
@@ -231,7 +235,7 @@ permalink: /lectures.html
     <td>Lecture</td> <!-- Lecture 8 -->
     <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
-        Training neural networks III <br>
+        Training neural networks II <br>
         Babysitting the learning process<br>
         Hyperparameter optimization
     </td>
@@ -274,9 +278,9 @@ permalink: /lectures.html
     <td>Lecture</td> <!-- Lecture 10 -->
     <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
-      Training Neural networks<br>
-      Ensembles, Dropout<br>
-      Convolutional Neural Netowrks<br>
+      Training neural networks<br>
+      Ensembles, dropout<br>
+      Convolutional neural neoworks<br>
     </td>
     <td>
       {% if release_day >= cur %}
