@@ -111,9 +111,12 @@ permalink: /lectures.html
     <tr>
       <td>Lecture</td> <!-- Lecture 2 -->
       <td>{{ cur | date: "%A, %b %-d"}}</td>
-       <td>Image classification and the data-driven approach <br> K-nearest neighbor
-         <br> Linear classification
-         <br> Loss function</td>
+       <td>Image classification and the data-driven approach
+          <ul>
+            <li>K-nearest neighbor
+            <li>Linear classification
+          </ul>
+         Optimization <ul><li>Loss function I</ul></td>
       <td>
         {% if release_day >= cur %}
           <a href="{{site.baseurl}}/docs/lecture2fall2024.pdf">[slides]</a><br>
@@ -127,7 +130,13 @@ permalink: /lectures.html
     <td>Lecture</td> <!-- Lecture 3 -->
     <td>{{ cur | date: "%A, %b %-d"}}</td>
     <!-- <td>To be announced</td> -->
-    <td>Loss function<br> Regularization <br> Optimization</td>
+
+    <td>Optimization
+      <ul>
+        <li>Loss function II
+        <li>Regularization
+        <li>Gradient computation
+      </ul>
     <td>
       {% if release_day >= cur %}
       <a href="{{site.baseurl}}/docs/lecture3fall2024.pdf">[slides]</a><br>
@@ -139,9 +148,12 @@ permalink: /lectures.html
     <td>Lecture</td> <!-- Lecture 4 -->
     <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
-      Optimization <br> Stochastic gradient descent<br>
-      Momentum, AdaGrad, Adam<br>
-      Learning rate schedules<br>
+      Optimization:
+      <ul>
+      <li>Stochastic gradient descent
+      <li>Optimization challenges
+      <li>Momentum, AdaGrad, Adam
+      </ul>
     </td>
     <td>
       {% if release_day >= cur %}
@@ -162,12 +174,13 @@ permalink: /lectures.html
     <td>Lecture</td> <!-- Lecture 5 -->
     <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
+        Learning rate schedules<br>
         Neural networks<br>
         Backpropagation<br>
-        Vector, matrix, and tensor derivatives<br>
     </td>
     <td>
       {% if release_day >= cur %}
+      <a href="{{site.baseurl}}/docs/lecture5fall2024.pdf">[slides]</a><br>
         <!--<a href="https://echo360.org/media/412c3612-6abb-4e53-a730-ee63a375686e/public">[lecture recording]</a><br>
         <a href="notes/optimization-2/">[backprop notes]</a><br>
         <a href="http://yann.lecun.com/exdb/publis/pdf/lecun-98b.pdf">[Efficient BackProp]</a> (optional)<br>
@@ -184,9 +197,8 @@ permalink: /lectures.html
     <td>Lecture</td> <!-- Lecture 6 -->
     <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
-      Neural networks<br>
-      Training neural networks<br>
-      Activation functions
+      Backpropagation<br>
+      Vector, matrix, and tensor derivatives<br>
     </td>
     <td>
       {% if release_day >= cur %}
