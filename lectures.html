@@ -167,6 +167,11 @@ permalink: /lectures.html
     <td>Friday, Sep 13, 11-12pm, CS 142 </td>
     <td>Python setup, Google collab, Basics of Python and Numpy</td>
     <td>
+      {% if release_day >= cur %}
+      <a href="https://cvl-umass.github.io/compsci682-fall-2024/notes/python-numpy-tutorial/">[Notes]</a>
+      {% endif %}
+    </td>
+    <td>
     </td>
   </tr>
   {% assign cur = 14 | times: 86400 | plus: start %}
@@ -201,9 +206,8 @@ permalink: /lectures.html
     </td>
     <td>
       {% if release_day >= cur %}
-        <!--<a href="https://echo360.org/media/2bdb1458-4eb0-4964-87e0-638a0277f270/public">[lecture recording]</a><br>
-        <a href="{{site.baseurl}}/docs/lecture6fall2023.pdf">[slides]</a><br>
-        <a href="notes/neural-networks-1/">[Neural Nets notes 1]</a><br>
+        <a href="{{site.baseurl}}/docs/lecture6fall2024.pdf">[slides]</a><br>
+        <!--<a href="notes/neural-networks-1/">[Neural Nets notes 1]</a><br>
         tips/tricks:
         <a href="http://research.microsoft.com/pubs/192769/tricks-2012.pdf">[1]</a>,
         <a href="http://arxiv.org/pdf/1206.5533v2.pdf">[2]</a> (optional)
