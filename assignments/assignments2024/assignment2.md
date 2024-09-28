@@ -101,7 +101,7 @@ new layers that are commonly used in convolutional networks. You will train a
 (shallow) convolutional network on CIFAR-10, and it will then be up to you to
 train the best network that you can.
 
-### Q5: Do something extra! (10 points)
+### Q5: PyTorch (10 points)
 For this last part, you will be working in PyTorch, a popular deep learning framework.
 
 Open up either `PyTorch.ipynb`. There, you will learn how the framework
