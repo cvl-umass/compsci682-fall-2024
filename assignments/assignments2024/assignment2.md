@@ -102,11 +102,9 @@ new layers that are commonly used in convolutional networks. You will train a
 train the best network that you can.
 
 ### Q5: Do something extra! (10 points)
-For this last part, you will be working in either TensorFlow or PyTorch, two popular
-and powerful deep learning frameworks. **You only need to complete ONE of these two notebooks**.
-While you are welcome to explore both for your own learning, there will be no extrac credit.
+For this last part, you will be working in PyTorch, a popular deep learning framework.
 
-Open up either `PyTorch.ipynb` or `Tensorflow.ipynb`. There, you will learn how the framework
+Open up either `PyTorch.ipynb`. There, you will learn how the framework
 works, culminating in training and convolutional network of your own design on CIFAR-10 to
 get the best performance you can.
 
