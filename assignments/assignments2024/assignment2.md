@@ -20,7 +20,7 @@ are as follows:
   gain experience with training these models on data
 
 ### Setup
-Get the code as a zip file [here](https://github.com/cvl-umass/compsci682-fall-2024/blob/main/assignments/assignments2024/assignment2.zip). 
+Get the code as a zip file [here](https://github.com/cvl-umass/compsci682-fall-2024/raw/main/assignments/assignments2024/assignment2.zip). 
 
 Please familiarize yourself with the [recommended workflow]({{site.baseurl}}/setup-instructions/#working-remotely-on-google-colaboratory) before starting the assignment. 
 
