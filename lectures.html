@@ -320,7 +320,7 @@ permalink: /lectures.html
     <td> Friday, Oct 4, 11-12pm, CS 142 </td>
     <td>Batch normalization</td>
     <td>
-       <!--<a href="https://docs.google.com/presentation/d/1j2dPO6kzY6kxpZxslLY5s4mHmg_zkRi__uJh5TygBhM/edit?usp=sharing">[slides]</a><br>-->
+       <a href="{{site.baseurl}}/docs/batch_normalization.pdf">[slides]</a><br>
     </td>
   </tr>
   {% assign cur = 35 | times: 86400 | plus: start %}
@@ -328,12 +328,14 @@ permalink: /lectures.html
     <td>Lecture</td>
     <td>{{ cur | date: "%A, %b %-d"}}</td>
     <td>
-      Convnets for spatial localization I<br>
-      Object Detection<br>
+      Training neural networks III <br>
+      Hyperparameter optimization<br>
+      Model ensembles, dropout<br>
+      Convolutional neural networks<br>
     </td>
     <td>
       {% if release_day >= cur %}
-      <!--<a href="https://docs.google.com/presentation/d/1U2ijqAYtgQf8yG8swZhuAJFTSqRf7kSl8Pj4ZxHndLk/edit?usp=sharing">[slides]</a> -->
+      <!--<a href="{{site.baseurl}}/docs/lecture10fall2024.pdf">[slides]</a> -->
       {% endif %}
     </td>
   </tr>
