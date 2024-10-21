@@ -13,15 +13,15 @@ Starter code containing Colab notebooks can be downloaded [here](https://github.
 - [Q1: Image Captioning with Transformers (25 points)](#q1-image-captioning-with-vanilla-rnns)
 - [Q2: Self-Supervised Learning for Image Classification (15 points)](#q2-self-supervised-learning)
 - [Q3: Style Transfer (10 points)](#q3-networ-visualization)
-- [Submitting your work](#submitting-your-work)]
+- [Submitting your work](#submitting-your-work)
 
 
 ## Setup
 Please familiarize yourself with the [recommended workflow]({{site.baseurl}}/setup-instructions/#working-remotely-on-google-colaboratory) before starting the assignment.
 
-In order to do the assignment, you will need to instal PyTorch (>=0.4, up to 1.3 as of 10/23/2019, instructions [here](http://pytorch.org/)) depending on which notebooks you decide to complete.
+In order to do the assignment, you will need to install PyTorch (>=0.4, up to 1.3 as of 10/23/2019, instructions [here](http://pytorch.org/)) depending on which notebooks you decide to complete.
 
-If you face difficulty re-using the python environment used in ealier assignments, we suggest that you create a fresh one. This involves only a few simple steps (using conda and pytorch-cpu for the example):
+If you face difficulty re-using the Python environment used in ealier assignments, we suggest that you create a fresh one. This involves only a few simple steps (using conda and pytorch-cpu for the example):
 
 ```bash
 conda remove --name cs682 --all # delete old environment if there is one
@@ -51,7 +51,7 @@ The goals of this assignment are as follows:
 The notebook ``Transformer_Captioning.ipynb`` will walk you through the implementation of a Transformer model and apply it to image captioning on COCO.
 
 ## Q2: Self-Supervised Learning for Image Classification (15 points)
-n the notebook ``Self_Supervised_Learning.ipynb``, you will learn how to leverage self-supervised pretraining to obtain better performance on image classification tasks. 
+In the notebook ``Self_Supervised_Learning.ipynb``, you will learn how to leverage self-supervised pretraining to obtain better performance on image classification tasks. 
 
 ## Q3: Style Transfer (10 points)
 In the Jupyter notebook ``StyleTransfer.ipynb`` you will learn how to create images with the content of one image but the style of another. 
@@ -63,7 +63,7 @@ Once you have completed all notebooks and filled out the necessary code, you nee
 
 To make sure everything is working properly, **remember to do a clean run ("Kernel -> Restart & Run All") after you finish work for each notebook** and submit the final version with all the outputs. 
 
-**1.** Generate a zip file of your code (`.py` and `.ipynb`) called `<UmassID>.zip` (For email address `arnaik@umass.edu` - zip file name is `arnaik.zip`). Please ensure you donot include the dataset folder in the zip.
+**1.** Generate a zip file of your code (`.py` and `.ipynb`) called `<UmassID>.zip` (For email address `arnaik@umass.edu` - zip file name is `arnaik.zip`). Please ensure you do not include the dataset folder in the zip.
 
 **2.** Convert all notebooks (`.ipynb` files) into a single PDF file.
 
