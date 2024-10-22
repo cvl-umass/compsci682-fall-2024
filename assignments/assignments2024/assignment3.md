@@ -36,7 +36,7 @@ conda install pytorch torchvision cpuonly -c pytorch
 Once you have completed all Colab notebooks **except `collect_submission.ipynb`**, proceed to the [submission instructions](#submitting-your-work).
 
 ## Goals
-In this assignment you will implement transformer networks, and apply them to image captioning on Microsoft COCO. You will also explore methods for visualizing the features of a pretrained model on ImageNet, and also this model to implement Style Transfer. Finally, you will train a Generative Adversarial Network to generate images that look like a training dataset!
+In this assignment, you will implement a transformer model and apply them to image captioning on the COCO dataset. Then you will be introduced to self-supervised learning to automatically learn the visual representations of an unlabeled dataset. Finally, you will explore methods for visualizing the features of a pretrained model on ImageNet, and also this model to implement Style Transfer.
 
 The goals of this assignment are as follows:
 
